@@ -1,4 +1,10 @@
 // ------------------------ navbar
+#main-navbar {
+	padding-top: 15px;
+	&.navbar-scroll {
+		padding-top: 8px;
+	}
+}
 .navbar-brand {
 	@include flexbox();
 	align-items: center;
@@ -16,6 +22,17 @@
 	margin-top: 30px;
 	li {
 		padding: 20px 35px;
+		position: relative;
+		a {
+			&:before {
+				content: '';
+				border: 1px solid $light-gray;
+				left: 0;
+				position: absolute;
+				top: 0;
+				width: 100%;
+			}
+		}
 	}
 }
 .tab-content {
@@ -38,6 +55,18 @@
 		&.tall {
 			grid-row: 1/3;
 			grid-column: 3/4;
+		}
+	}
+}
+#gallery {
+	.figcaption {
+		@include flexbox();
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		position: relative;
+		i {
+			position: absolute;
 		}
 	}
 }
@@ -81,14 +110,19 @@
 		margin: 0;
 	}
 }
+#events {
+	.a-col-item {
+		padding: 10px 0;
+	}
+}
 #events,#news {
 	padding-left: 30px;
 	padding-right: 30px;
 
 	.row {
-		margin-top: 40px;
+		margin-top: 30px;
 		.col-item {
-			padding: 0 15px;
+			padding: 15px;
 			p {
 				margin-top: 15px;
 				margin-bottom: 12px;
