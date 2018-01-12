@@ -2,6 +2,13 @@
 html,body {
 	font-family: 'Fira-Regular',sans-serif;
 }
+.link-bla-blu {
+	color: $black;
+	line-height: 1.5em;
+	&:hover {
+		color: $blue;
+	}
+}
 // ------------------------ navbar
 #main-navbar {
 	@include transition(0.5);
@@ -141,7 +148,7 @@ html,body {
 	}
 }
 // ------------------------------- events
-#events,#timeline,#news,#gallery,#about,#sponsors,#contact {
+#events,#timeline,#news,#gallery,#about,#sponsors,#contact,#hero-section.hero-not-home {
 	h1 {
 		color: $yellow;
 		font-family: 'Fira-Black', sans-serif;
@@ -331,4 +338,13 @@ a>.fa-instagram:hover {
 }
 a>.fa-twitter:hover {
   color: #2ac6f7;
+}
+// ----------------------------- other page layout
+#hero-section.hero-not-home {
+	h1,p.smaller {
+		color: $white;
+	}
+	p.smaller {
+		font-size: 0.8em;
+	}
 }

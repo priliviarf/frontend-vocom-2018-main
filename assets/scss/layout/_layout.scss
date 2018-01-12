@@ -118,11 +118,12 @@
 #events,#news {
 	padding-left: 30px;
 	padding-right: 30px;
+	padding-bottom: 30px;
 
 	.row {
 		margin-top: 30px;
 		.col-item {
-			padding: 15px;
+			padding: 20px 15px;
 			p {
 				margin-top: 15px;
 				margin-bottom: 12px;
@@ -263,4 +264,19 @@ footer {
 			margin: 0 7px;
 		}
 	}
+}
+// ----------------------------- other page layout
+#hero-section.hero-not-home {
+	align-items: center;
+	background-position: center;
+	flex-direction: column;
+  justify-content: center;
+  height: 50vh;
+	h1 {
+		margin: 0.2em 0;
+	}
+}
+.center-section {
+	margin: 0 auto;
+	width: 65%;
 }
