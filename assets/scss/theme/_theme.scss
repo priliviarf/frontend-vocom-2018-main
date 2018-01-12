@@ -1,0 +1,227 @@
+// ------------------------------------------- main theme
+html,body {
+	font-family: 'Fira-Regular',sans-serif;
+}
+// ------------------------ navbar
+#navbar {
+	@include transition(0.5);
+}
+.navbar-scroll {
+	@include box-shadow();
+	background-color: $blue;
+	.nav-link {
+		&:before {
+			background-color: $yellow;
+		}
+	}
+}
+.navbar-brand {
+	span {
+		color: $white;
+		font-family: 'Montserrat-Bold', sans-serif;
+		text-transform: uppercase;
+	}
+}
+.nav-item {
+		font-family: 'Montserrat-Bold', sans-serif;
+}
+.nav-link {
+	@include transition(0.3);
+	margin-right: 5px;
+	margin-top: -3px;
+	position: relative;
+
+	&:before {
+		@include transition(0.3);
+		content: '';
+		background-color: $white;
+		height: 0px;
+		position: absolute;
+		width: 100%;
+	}
+
+	&:before {
+		top: 35px;
+		left: 0;
+	}
+
+	&:hover {
+		&:before {
+			@include transition(0.3);
+			height: 3px;
+		}
+	}
+}
+.hr-spec {
+  width: 45px;
+  margin-left: 0;
+  border: 2px solid $yellow;
+}
+.nav-pills {
+	li {
+		border-top: 1px solid $gray;
+		font-family: 'Fira-Bold',sans-serif;
+		text-align: center;
+		a {
+			color: $gray;
+		}
+	}
+}
+.tab-content {
+	h4 {
+		color: $yellow;
+		font-family: 'Fira-Bold',sans-serif;
+		text-align: center;
+	}
+}
+// ----------------------------- hero-section
+#hero-section {
+	background-attachment: fixed;
+	background-color: $yellow;
+	background-image: url('../img/travel.png');
+	background-position:  bottom;
+	background-repeat: no-repeat;
+	background-size: contain;
+
+	.left {
+		background-color: $blue;
+		color: $white;
+		&>h1 {
+			font-size: 2.5em;
+			letter-spacing: 0.05em;
+			position: relative;
+
+			&:before {
+				content: '';
+				background-color: $yellow;
+				height: 2px;
+				left: 0;
+				position: absolute;
+				top: -20px;
+				width: 60px;
+			}
+		}
+	}
+}
+.text-hr {
+	position: relative;
+
+	&:before,&:after {
+		content: '';
+		background-color: $gray;
+		height: 1px;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 5px;
+	}
+
+	&:before {
+		left: -10px;
+	}
+	&:after {
+		right: -10px;
+	}
+}
+// ------------------------------- events
+#events,#timeline,#news,#gallery,#about,#sponsors,#contact {
+	h1 {
+		color: $yellow;
+		font-family: 'Fira-Black', sans-serif;
+	}
+	p.smaller {
+		color: gray;
+		font-size: 0.7em;
+	}
+}
+#events,#news {
+	.col-item {
+		h3 {
+			font-family: 'Fira-Black', sans-serif;
+			font-size: 1.5rem;
+		}
+		a {
+			color: $yellow;
+			font-size: 0.9em;
+		}
+	}
+}
+// ------------------------- timeline
+.timeline {
+	.timeline-item {
+
+		.icon {
+			color: $white;
+			position: relative;
+			text-align: center;
+
+			&:before {
+				@include radius(100%);
+				content: '';
+				background-color: $yellow;
+				left: 50%;
+		    height: 40px;
+		    position: absolute;
+		    top: -7px;
+		    transform: translateX(-50%);
+		    width: 40px;
+		    z-index: -1;
+			}
+		}
+		.text {
+			h5 {
+				font-family: 'Fira-Bold',sans-serif;
+				font-size: 1.2em;
+			}
+		}
+	}
+}
+// ------------------------- mini-section
+.mini-section {
+	position: relative;
+	.overlay {
+		@include overlay($flat-black,0.7);
+	}
+	h1 {
+		color: $white;
+		font-family: 'Fira-Black', sans-serif;
+	}
+}
+.testi,.regist {
+	@include img-bg();
+	background-attachment: fixed;
+	background-image: url('../img/wallpaper2.jpg');
+	color: $white;
+}
+.testi {
+
+	.testi-content {
+		font-family: 'Fira-Light',sans-serif;
+		section {
+			&:before {
+				content: '';
+				background-image: url(../img/quote.png);
+			}
+		}
+	}
+}
+#about {
+	img {
+		@include img-bg();
+		@include radius(100%);
+	}
+	.about-text {
+		text-align: center;
+	}
+}
+.map {
+	background-color: $gray;
+}
+footer {
+	background-color: $blue;
+	ul {
+		a {
+			color: $white;
+		}
+	}
+}
