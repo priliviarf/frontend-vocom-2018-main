@@ -72,6 +72,7 @@ figure {
 	}
 }
 a {
+	@include transition(0.3);
 	&:hover,&:active {
 		text-decoration: none;
 	}

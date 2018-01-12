@@ -3,7 +3,7 @@ html,body {
 	font-family: 'Fira-Regular',sans-serif;
 }
 // ------------------------ navbar
-#navbar {
+#main-navbar {
 	@include transition(0.5);
 }
 .navbar-scroll {
@@ -53,17 +53,34 @@ html,body {
 	}
 }
 .hr-spec {
+	@include transition(0.3);
   width: 45px;
   margin-left: 0;
   border: 2px solid $yellow;
 }
 .nav-pills {
 	li {
-		border-top: 1px solid $gray;
 		font-family: 'Fira-Bold',sans-serif;
 		text-align: center;
 		a {
-			color: $gray;
+			color: $light-gray;
+			&:hover {
+				color: $gray;
+			}
+		}
+		&>a[aria-expanded="true"] {
+			color: $flat-black;
+			&:before {
+				border: 1px solid $yellow;
+			}
+		}
+		&.active {
+			a {
+				color: $flat-black;
+				&:before {
+					border: 1px solid $yellow;
+				}
+			}
 		}
 	}
 }
@@ -134,6 +151,38 @@ html,body {
 		font-size: 0.7em;
 	}
 }
+#events {
+	.col-item {
+		cursor: pointer;
+		h3 {
+			color: $gray;
+		}
+		h3,.a-col-item {
+			@include transition(0.3);
+		}
+		&:hover {
+			.hr-spec {
+				border: 1px solid $gray;
+				margin-bottom: 18px;
+			  width: 100%;
+			}
+			h3 {
+				color: $flat-black;
+			}
+			.a-col-item {
+				font-weight: bold;
+			}
+		}
+		.a-col-item:hover {
+			text-decoration: underline;
+		}
+	}
+}
+#events{
+	a {
+		color: $yellow;
+	}
+}
 #events,#news {
 	.col-item {
 		h3 {
@@ -141,7 +190,6 @@ html,body {
 			font-size: 1.5rem;
 		}
 		a {
-			color: $yellow;
 			font-size: 0.9em;
 		}
 	}
@@ -172,6 +220,47 @@ html,body {
 			h5 {
 				font-family: 'Fira-Bold',sans-serif;
 				font-size: 1.2em;
+			}
+		}
+	}
+}
+// ----------------------------------- gallery
+#gallery {
+	a {
+		.figcaption {
+			overflow: hidden;
+			&:before {
+				@include transition(0.25);
+				content: '';
+				border: 1px solid $white;
+				height: 90%;
+				width: 90%;
+				transform: scale(1.4);
+				z-index: 30;
+			}
+			.overlay {
+				@include transition(0.2);
+				@include overlay($flat-black,0);
+				z-index: 29;
+			}
+			i {
+				@include transition(0.4);
+				color: $white;
+				opacity: 0;
+				z-index: 31;
+			}
+		}
+		&:hover {
+			.figcaption {
+				&:before {
+					transform: none;
+				}
+			}
+			.overlay {
+				@include overlay($flat-black,0.7);
+			}
+			i {
+				opacity: 1;
 			}
 		}
 	}
@@ -224,4 +313,22 @@ footer {
 			color: $white;
 		}
 	}
+}
+#sponsors {
+	img {
+		@include transition(0.35);
+		filter: grayscale(1);
+		&:hover {
+			filter: grayscale(0);
+		}
+	}
+}
+a>.fa-facebook-square:hover {
+  color: #3b5999;
+}
+a>.fa-instagram:hover {
+  color: #fb3958;
+}
+a>.fa-twitter:hover {
+  color: #2ac6f7;
 }

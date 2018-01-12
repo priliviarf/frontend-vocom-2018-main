@@ -1,0 +1,32 @@
+.btn {
+  @include radius(0);
+  @include transition(0.3);
+  padding: .5rem 1.4rem;
+}
+.btn-blue {
+  background-color: $blue;
+  border: transparent;
+  color: $white;
+  &:active,&:hover {
+    background-color:  #4e69c1;
+    color: $white;
+  }
+}
+.btn-white-blue {
+  background-color:  transparent;
+  border: 1px solid $white;
+  color: $white;
+  &:active,&:hover {
+    background-color:  $white;
+    color: $blue;
+  }
+}
+.btn-ye-full {
+  background-color:  transparent;
+  border: 1px solid $yellow;
+  color: $yellow;
+  &:active,&:hover {
+    background-color:  $yellow;
+    color: $white;
+  }
+}
