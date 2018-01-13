@@ -659,6 +659,61 @@ footer {
   margin: 0 auto;
   width: 65%; }
 
+#error-body {
+  padding: 30px;
+  height: auto; }
+  #error-body #vocom-logo {
+    margin: 0 auto;
+    width: 18%;
+    display: block; }
+
+.content {
+  width: 100%;
+  margin-top: 25px;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.third-quarter-col {
+  width: 75%;
+  display: inline-block;
+  float: left; }
+  .third-quarter-col #error-img {
+    width: 70%;
+    margin: auto;
+    display: block; }
+
+.quarter-col {
+  display: inline-block;
+  width: 25%; }
+  .quarter-col p {
+    margin-bottom: 50px; }
+    .quarter-col p span {
+      font-weight: bold; }
+  .quarter-col a.error-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px; }
+    .quarter-col a.error-btn:hover {
+      background-color: #177fc5;
+      transition: 0.5s; }
+
+#error-footer p {
+  padding: 20px;
+  text-align: center;
+  font-size: 0.8em;
+  margin: 0; }
+  #error-footer p span {
+    font-weight: bold; }
+
+.center {
+  margin: 0 auto; }
+
+.overflow-hid {
+  overflow: hidden; }
+
 html, body {
   font-family: 'Fira-Regular',sans-serif; }
 
@@ -955,6 +1010,12 @@ a > .fa-twitter:hover {
   color: #fff; }
 #hero-section.hero-not-home p.smaller {
   font-size: 0.8em; }
+
+#error-body {
+  background-color: #f0be1c; }
+
+.red {
+  color: #f09292; }
 
 .btn {
   border-radius: 0;

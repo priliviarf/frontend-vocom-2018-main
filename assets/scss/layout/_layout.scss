@@ -280,3 +280,66 @@ footer {
 	margin: 0 auto;
 	width: 65%;
 }
+// ----------------------------- error Page
+#error-body {
+	padding: 30px;
+	height: auto;
+	#vocom-logo {
+		margin: 0 auto;
+		width: 18%;
+		display: block;
+	}
+}
+.content {
+	width: 100%;
+	margin-top: 25px;
+	overflow: hidden;
+	@include borderbox();
+}
+.third-quarter-col {
+	width: 75%;
+	display: inline-block;
+	float: left;
+	#error-img {
+		width: 70%;
+		margin: auto;
+		display: block;
+	}
+}
+.quarter-col {
+	display: inline-block;
+	width: 25%;
+	p {
+		span {
+			font-weight: bold;
+		}
+		margin-bottom: 50px;
+	}
+	a.error-btn {
+		background-color: $light-blue;
+		color: white;
+		padding: 15px 25px;
+		border-radius: 5px;
+		&:hover {
+			background-color: #177fc5;
+			transition: 0.5s;
+		}
+	}
+}
+#error-footer {
+	p {
+		padding: 20px;
+		text-align: center;
+		font-size: 0.8em;
+		margin: 0;
+		span {
+			font-weight: bold;
+		}
+	}
+}
+.center {
+	margin: 0 auto;
+}
+.overflow-hid {
+	overflow: hidden;
+}
