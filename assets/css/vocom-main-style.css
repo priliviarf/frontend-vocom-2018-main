@@ -700,13 +700,14 @@ footer {
       background-color: #177fc5;
       transition: 0.5s; }
 
-#error-footer p {
-  padding: 20px;
-  text-align: center;
-  font-size: 0.8em;
-  margin: 0; }
-  #error-footer p span {
-    font-weight: bold; }
+#error-footer {
+  background-color: #304179; }
+  #error-footer p {
+    color: white;
+    padding: 25px;
+    text-align: center;
+    font-size: 0.8em;
+    margin: 0; }
 
 .center {
   margin: 0 auto; }
