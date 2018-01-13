@@ -342,3 +342,119 @@ footer {
 .overflow-hid {
 	overflow: hidden;
 }
+
+/*Login page*/
+.wrapLogin {
+	position: absolute;
+  	width: 100%;
+  	height: 100vh;
+  	background-color: #6D7A9D; }
+
+#login .container{
+    margin-top: 50px;
+    padding: 0;
+	height: 500px;
+	background-color: #FEBA33;
+	border-radius: 25px;
+	overflow: hidden;
+}
+
+.kiri-login {
+	float: left;
+}
+#login .col-sm-5 img {
+    max-width: 100%;
+}
+.form-login {
+	width: 390px;
+	height: 440px;
+	background-color: #fff;
+	background-color: #fff;
+	margin: 30px auto;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.form-login .row{
+	width: 70%;
+	margin: auto;
+	margin-top: 15px;
+}
+.form-login .row img{
+	width: 80%;
+	margin: auto;
+}
+
+.form-login .row h4{
+	margin-left: 20px;
+	color:#FEBA33;
+}
+#login .col-sm-3 img {
+    float: left;
+    margin: 0;
+}
+#login .form-control {
+	display: inline-block;
+	width: 70%;
+	border-radius: 0;
+	border:none;
+	border-bottom: 2px solid grey;
+}
+#login .form-group {
+	width: 100%;
+	padding: 5px 25px;
+}
+#login .form-group label{
+	padding: 0 5px;
+}
+#login .form-group label span{
+	padding-left: 32px;
+}
+#login input:focus {
+    border-bottom: 2px solid #FEBA33;
+}
+#login .checkbox label{
+	margin: 5px 130px;
+}
+
+#login .checkbox label input{
+	margin-right: 10px;
+}
+#login .form-login .btn{
+	width: 120px;
+	height: 40px;
+	margin: 10px 140px;
+	background-color: #253A78;
+	border-radius: 5px;
+	color: #fff;
+}
+#login .btn:hover {
+	background-color: #213368;
+	cursor: pointer;
+	color: #FEBA33;
+}
+#login .forgot {
+	width: 60%;
+	margin: auto;
+	margin-top: 5px;
+}
+.forgot a {
+	color: #5870BA;
+}
+.forgot p {
+	margin-bottom: 2px;
+}
+#login a:hover {
+	color: #FEBA33;
+	cursor: pointer;
+}
+#login .regis {
+	width: 70%;
+	margin: auto;
+}
+.regis a{
+	color: #5870BA;
+}
+#login a:hover {
+	color: #FEBA33;
+	cursor: pointer;
+}
