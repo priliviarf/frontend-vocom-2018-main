@@ -722,6 +722,131 @@ footer {
 .overflow-hid {
   overflow: hidden; }
 
+#register {
+  background-color: #304179;
+  padding: 30px;
+  color: #304179 !important; }
+  #register .regist-content {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    background-color: #fff;
+    color: #304179;
+    padding: 10px 0;
+    width: 70%;
+    border-radius: 20px; }
+    #register .regist-content #vocom-logo-color {
+      width: 20%;
+      display: block;
+      margin: 10px auto; }
+    #register .regist-content p.title {
+      font-weight: bold;
+      font-size: 1.5em;
+      text-align: center;
+      width: 100%;
+      margin: 10px auto;
+      margin-bottom: 0 !important; }
+    #register .regist-content .container {
+      max-width: 100% !important;
+      margin: 0 !important; }
+      #register .regist-content .container .row {
+        margin: 0 !important; }
+      #register .regist-content .container .form-regist .mg-t-10 {
+        margin-top: 10px !important; }
+      #register .regist-content .container .form-regist .nav-pills li {
+        padding: 10px 25px !important; }
+      #register .regist-content .container .form-regist .tab-content {
+        margin-top: 10px; }
+        #register .regist-content .container .form-regist .tab-content input {
+          margin: 0;
+          padding: 0 5px;
+          border: 0;
+          border-bottom: 1px solid #304179;
+          width: 95%; }
+          #register .regist-content .container .form-regist .tab-content input:focus {
+            outline: none; }
+        #register .regist-content .container .form-regist .tab-content select {
+          width: 95%; }
+      #register .regist-content .container .form-regist .phone-num input {
+        width: 80%; }
+      #register .regist-content .container .form-regist .row {
+        margin: 0; }
+        #register .regist-content .container .form-regist .row span {
+          font-weight: bold;
+          padding: 0 15px; }
+      #register .regist-content .container .form-regist .mid {
+        padding: 0 auto !important; }
+      #register .regist-content .container .form-regist .regist-btn {
+        padding: 5px !important;
+        margin: 0 auto !important;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 1.5em;
+        color: #304179;
+        background-color: inherit;
+        border: 2px solid #304179 !important;
+        border-radius: 5px; }
+      #register .regist-content .container .form-regist .log-here {
+        text-align: center !important;
+        margin: 0; }
+        #register .regist-content .container .form-regist .log-here span {
+          font-weight: bold !important; }
+        #register .regist-content .container .form-regist .log-here a {
+          color: inherit; }
+  #register .mg-pd-0 {
+    margin: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 0 !important; }
+  #register .desc-form {
+    background-color: #f0be1c;
+    color: #304179;
+    position: fixed;
+    right: 0;
+    width: 30%;
+    top: 0;
+    min-height: 100%;
+    padding: 25px 0;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%); }
+    #register .desc-form .desc-logo {
+      width: 50%;
+      margin: 0 auto;
+      display: block; }
+    #register .desc-form p {
+      font-family: 'Montserrat';
+      line-height: 1.5em;
+      direction: rtl;
+      padding: 50px 25px 50px 50px; }
+    #register .desc-form span {
+      font-weight: bold;
+      font-size: 2em;
+      line-height: 1.2em;
+      text-align: right !important; }
+  @media screen and (max-width: 768px) {
+    #register #vocom-logo-color {
+      width: 40% !important; }
+    #register .regist-content {
+      width: 100% !important; }
+    #register .desc-form {
+      position: relative !important;
+      width: 100% !important;
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%) !important;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%) !important;
+      border-radius: 25px;
+      margin-top: 25px; }
+      #register .desc-form p {
+        direction: ltr !important;
+        padding: 50px 25px !important; }
+      #register .desc-form .desc-logo {
+        width: 30% !important; } }
+  @media screen and (max-width: 480px) {
+    #register body {
+      font-size: 0.8em; }
+    #register #vocom-logo-color {
+      width: 75% !important; } }
+
 html, body {
   font-family: 'Fira-Regular',sans-serif; }
 
