@@ -1,0 +1,433 @@
+@media screen and (max-width: 1024px) {
+  // ------------------------------- homepage
+  #hero-section {
+  	.left {
+  		width: 35%;
+  	}
+  	.right {
+      width: 65%;
+    }
+  }
+  #events {
+  	.row {
+  		.col-item {
+  			padding: 20px 0px;
+      }
+    }
+  }
+  .timeline {
+  	.timeline-item {
+  		.date,.icon {
+  			flex: 2;
+  		}
+    }
+  }
+  .mini-section {
+  	.content {
+      padding: 10px;
+  		h1 {
+  			margin-bottom: 0px;
+  		}
+      .testi-content {
+  			div {
+  				section {
+  					padding: 0.5em 5em 0 5em;
+            p:nth-child(2) {
+              margin-bottom: 0px;
+            }
+  				}
+  			}
+      }
+    }
+  }
+  // ----------------------- button
+  .link-bottom {
+  	padding: 10px 20px 0 ;
+  }
+  .mini-section.regist .content p {
+    margin: 1em 5em 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #main-navbar {
+    .navbar-nav {
+      background-color: $blue;
+      padding: 10px;
+    }
+  }
+  #main-navbar.navbar-scroll {
+    .navbar-nav {
+      padding: 0px;
+    }
+  }
+}
+
+@media screen and (max-width: 769px) {
+  // ------------------------------------ homepage
+  #hero-section {
+    flex-direction: column;
+    .left,.right {
+      height: 50vh;
+      width: 100%;
+    }
+    .left {
+      order: 2;
+    }
+    .right {
+      padding: 50px;
+      order: 1;
+      img {
+        width: 220px;
+      }
+    }
+  }
+  .mini-section .content .testi-content div section {
+    padding: 0.5em 1em 0 1em;
+  }
+  #events .row .col-item, #news .row .col-item {
+    padding: 20px 10px
+  }
+  #about .about-text {
+    width: 75%;
+  }
+  #contact .contact-item {
+    flex-direction: column;
+    .address {
+      padding: 20px;
+      width: 100%;
+    }
+    .map {
+      height: 50vh;
+      width: 100vw;
+    }
+  }
+  .center-section {
+    width: 85%;
+  }
+
+  /*Mulai login*/
+  #login .container{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+    background-color: #FEBA33;
+    border-radius: 0px;
+    overflow: hidden;
+  }
+  #login .logo-atas {
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+  }
+  #login .logo-atas span img{
+  display: inline-block;
+  width: 180px;
+  margin-top: 20px;
+  float: right;
+  }
+  #login .logo-coming {
+    display: none;
+  }
+  #login .text-login {
+    display: none;
+  }
+  .form-login {
+    height: 450px;
+  }
+  #login .margin-zero {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  /*selesai login*/
+
+}
+
+@media screen and (max-width: 480px) {
+  // ------------------------------------ homepage
+  #hero-section {
+    .right {
+      margin-top: 20px;
+    }
+  }
+  #timeline .content {
+    width: 90%;
+  }
+  .nav-pills li {
+    padding: 20px 10px;
+  }
+  .timeline .timeline-item {
+    flex-direction: column;
+    .icon {
+      order: 1;
+      margin: 20px 0;
+    }
+    .date {
+      order: 2;
+    }
+    .text {
+      order: 3;
+    }
+  }
+  .mini-section {
+    height: auto;
+  }
+  // ----------------------- grid
+  .grid-container {
+  	grid-template-columns: repeat(1, 1fr);
+
+  	div {
+  		&.wide {
+  			grid-column: auto;
+  		}
+  		&.tall {
+  			grid-row: auto;
+  			grid-column: auto;
+  		}
+  		&.big {
+  			grid-row: auto;
+  			grid-column: auto;
+  		}
+  	}
+  }
+  .mini-section.regist .content p {
+    margin: 1em 1.5em 0;
+  }
+  #about .about-text {
+    width: 85%;
+  }
+  
+  /*mulai login*/
+  .wrapLogin {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #FEBA33; }
+
+  #login .container{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+    background-color: #FEBA33;
+    border-radius: 0px;
+    overflow: hidden;
+  }
+  #login .col-md-4 {
+    background-color: #253A78;
+  }
+  #login .logo-atas {
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+  }
+  #login .logo-atas img{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 35px;
+  }
+  #login .logo-atas span img{
+    display: inline-block;
+    width: 160px;
+    margin-top: 20px;
+    float: right;
+  }
+  .form-login {
+    height: 430px;
+    width: 340px;
+  }
+  #login .margin-zero {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .form-login .row{
+    width: 80%;
+    margin: auto;
+    margin-top: 5px;
+    max-height: 80px;
+  }
+  .form-login .row img{
+    width: 60%;
+    margin: auto;
+  }
+
+  .form-login .row h4{
+    margin-left: 20px;
+    color:#FEBA33;
+  }
+  #login .form-control {
+    display: inline-block;
+    width: 70%;
+    border-radius: 0;
+    border:none;
+    border-bottom: 2px solid grey;
+  }
+  #login .form-group {
+    width: 100%;
+    padding: 5px 10px;
+  }
+  #login .form-group label{
+    padding: 0 5px;
+  }
+  #login .form-group label span{
+    padding-left: 32px;
+  }
+  #login .checkbox label{
+    margin: 5px 100px;
+  }
+
+  #login .checkbox label input{
+    margin-right: 10px;
+  }
+  #login .form-login .btn{
+    width: 120px;
+    height: 40px;
+    margin: 5px 110px;
+    background-color: #253A78;
+    border-radius: 5px;
+    color: #fff;
+  }
+  #login .forgot {
+    width: 70%;
+    margin: auto;
+    margin-top: 5px;
+  }
+  #login .regis {
+    width: 85%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 326px) {
+  #events,#news {
+  	padding-left: 10px;
+  	padding-right: 10px;
+  }
+
+  /*mulai login*/
+  #login .container{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+    background-color: #FEBA33;
+    border-radius: 0px;
+    overflow: hidden;
+  }
+  #login .logo-atas {
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+  }
+  #login .logo-atas img{
+    margin-top: 15px;
+    margin-left: 10px;
+    width: 25px;
+  }
+  #login .logo-atas span img{
+    display: inline-block;
+    width: 130px;
+    margin-top: 20px;
+    float: right;
+  }
+  .form-login {
+    height: 420px;
+    width: 250px;
+  }
+  .form-login .row{
+    width: 90%;
+    margin: auto;
+    margin-top: 5px;
+    max-height: 80px;
+  }
+  .form-login .row img{
+    width: 70%;
+    margin: auto;
+  }
+
+  .form-login .row h4{
+    margin-left: 10px;
+    color:#FEBA33;
+    font-size: 1.3em;
+  }
+  #login .form-control {
+    display: inline-block;
+    width: 55%;
+    border-radius: 0;
+    border:none;
+    border-bottom: 1.3px solid grey;
+  }
+  #login .form-group {
+    width: 100%;
+    padding: 5px 10px;
+  }
+  #login .form-group label{
+    padding: 0 5px;
+  }
+  #login .form-group label span{
+    padding-left: 28px;
+  }
+  #login input:focus {
+      border-bottom: 1.5px solid #FEBA33;
+  }
+  #login .checkbox label{
+    margin: 0px 55px;
+    margin-bottom: 5px;
+  }
+
+  #login .checkbox label input{
+    margin-right: 10px;
+  }
+  #login .form-login .btn{
+    width: 100px;
+    height: 40px;
+    margin: 0px 75px;
+    background-color: #253A78;
+    border-radius: 5px;
+    color: #fff;
+  }
+  #login .forgot {
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .forgot a {
+    color: #5870BA;
+  }
+  .forgot p {
+    margin-bottom: 2px;
+  }
+}
+// --------------------------------- special for ipad
+@media screen and (min-height: 1024px) and (min-width: 768px){
+  #events,#timeline,#news,#gallery,#about,#sponsors,#contact {
+  	min-height: auto;
+  }
+  .grid-container {
+    grid-auto-rows: minmax(150px, auto);
+  }
+  #hero-section {
+    flex-direction: column;
+    .left,.right {
+      width: 100%;
+    }
+    .left {
+      height: 40vh;
+      order: 2;
+    }
+    .right {
+      height: 60vh;
+      padding: 50px;
+      order: 1;
+      img {
+        width: 220px;
+      }
+    }
+  }
+  .mini-section {
+    height: auto;
+  }
+}

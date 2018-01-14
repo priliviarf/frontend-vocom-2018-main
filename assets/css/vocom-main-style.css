@@ -405,6 +405,9 @@ a {
 .row {
   width: 100%; }
 
+.navbar-dark .navbar-toggler, .navbar-toggler:focus, .navbar-toggler:hover {
+  border-color: transparent; }
+
 #main-navbar {
   padding-top: 15px; }
   #main-navbar.navbar-scroll {
@@ -457,6 +460,9 @@ a {
     .grid-container div.tall {
       grid-row: 1/3;
       grid-column: 3/4; }
+    .grid-container div.big {
+      grid-row: 1/3;
+      grid-column: 3/5; }
 
 #gallery .figcaption {
   display: -webkit-box;
@@ -651,6 +657,7 @@ footer {
   background-position: center;
   flex-direction: column;
   justify-content: center;
+  padding: 0 30px;
   height: 50vh; }
   #hero-section.hero-not-home h1 {
     margin: 0.2em 0; }
@@ -715,7 +722,7 @@ footer {
 .overflow-hid {
   overflow: hidden; }
 
-/*Login page*/
+/*-------Login page-------*/
 .wrapLogin {
   position: absolute;
   width: 100%;
@@ -723,23 +730,51 @@ footer {
   background-color: #6D7A9D; }
 
 #login .container {
-  margin-top: 50px;
+  margin-top: 30px;
   padding: 0;
   height: 500px;
   background-color: #FEBA33;
-  border-radius: 25px;
+  border-radius: 20px;
   overflow: hidden; }
 
-.kiri-login {
-  float: left; }
+#login .col-md-4 {
+  background-color: #253A78; }
 
-#login .col-sm-5 img {
+#login .logo-atas {
+  width: 100%;
+  float: left;
+  margin-bottom: 30px; }
+
+#login .logo-atas img {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 40px; }
+
+#login .logo-atas span img {
+  display: none; }
+
+#login .logo-coming {
+  width: 230px;
+  height: 110px;
+  margin: auto;
+  margin-top: 10px; }
+
+#login .col-md-4 img {
   max-width: 100%; }
+
+#login .text-login {
+  margin-top: 30px;
+  margin-left: 20px; }
+
+#login .text-login h3 {
+  color: #FEBA33; }
+
+#login .text-login p {
+  color: #dce1ea; }
 
 .form-login {
   width: 390px;
   height: 440px;
-  background-color: #fff;
   background-color: #fff;
   margin: 30px auto;
   border-radius: 10px;
@@ -748,7 +783,8 @@ footer {
 .form-login .row {
   width: 70%;
   margin: auto;
-  margin-top: 15px; }
+  margin-top: 15px;
+  max-height: 100px; }
 
 .form-login .row img {
   width: 80%;
@@ -757,10 +793,6 @@ footer {
 .form-login .row h4 {
   margin-left: 20px;
   color: #FEBA33; }
-
-#login .col-sm-3 img {
-  float: left;
-  margin: 0; }
 
 #login .form-control {
   display: inline-block;
@@ -826,6 +858,139 @@ footer {
 #login a:hover {
   color: #FEBA33;
   cursor: pointer; }
+
+/*--------Dashboard--------*/
+#dashboard div#header {
+  width: 100%;
+  height: 80px;
+  color: white;
+  background-color: #2A2B30;
+  margin: 0 auto; }
+
+.logo {
+  max-width: 500px;
+  margin: 0 auto; }
+
+.logo a .img1 {
+  width: 70px; }
+
+.logo a .img2 {
+  width: 200px; }
+
+.logo a .img3 {
+  width: 65px; }
+
+ul#nav li a {
+  width: 100%;
+  color: #ccc;
+  display: inline-block;
+  padding: 10px;
+  font-size: 1em;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s; }
+
+ul#nav li a div.circle-hover {
+  display: inline-block;
+  float: right;
+  padding-top: 8px; }
+
+ul#nav li a div .circle {
+  float: left;
+  width: 8px;
+  height: 8px;
+  margin-right: 1px;
+  border-radius: 8px;
+  background-color: black; }
+
+ul#nav li a span {
+  display: inline-block;
+  float: left; }
+
+ul#nav li a:hover {
+  color: #FEBA33; }
+
+#dashboard .container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  margin-right: 0px;
+  padding-left: 0px;
+  width: 100%;
+  height: auto; }
+
+#dashboard .container-fluid .row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: 0px;
+  margin-left: 0px; }
+
+#dashboard .row.content {
+  margin-top: 0px;
+  height: auto;
+  width: 100%; }
+
+.box-db {
+  background-color: #313238;
+  margin: 0; }
+
+#dashboard .sidenav {
+  height: 100%;
+  background-color: #1C1D22; }
+
+#dashboard .container-fluid .bigbox {
+  overflow: hidden;
+  margin-top: 35px;
+  margin-left: 20px;
+  border-radius: 10px;
+  background-color: #1C1D22; }
+
+#dashboard .smallBox {
+  max-width: 30%;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #2A2B30; }
+
+#dashboard .col-sm-10 {
+  margin: 0px;
+  padding-right: 40px; }
+
+.title-db {
+  color: #F0BD07;
+  padding-top: 10px; }
+
+div h2.title-db {
+  padding-top: 5px;
+  font-size: 2.5em; }
+
+.title-event-db {
+  color: grey;
+  padding-top: 15px; }
+
+.event-db {
+  color: grey; }
+
+.news-db {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.btn-db {
+  width: 130px;
+  margin-bottom: 15px;
+  padding: 5px;
+  background: transparent;
+  height: 40px;
+  color: #FEBA33;
+  border: 2px solid #FEBA33;
+  border-radius: 40px; }
+
+.margin-zero {
+  padding-right: 0px; }
 
 html, body {
   font-family: 'Fira-Regular',sans-serif; }
@@ -1119,10 +1284,12 @@ a > .fa-instagram:hover {
 a > .fa-twitter:hover {
   color: #2ac6f7; }
 
-#hero-section.hero-not-home h1, #hero-section.hero-not-home p.smaller {
-  color: #fff; }
-#hero-section.hero-not-home p.smaller {
-  font-size: 0.8em; }
+#hero-section.hero-not-home {
+  text-align: center; }
+  #hero-section.hero-not-home h1, #hero-section.hero-not-home p.smaller {
+    color: #fff; }
+  #hero-section.hero-not-home p.smaller {
+    font-size: 0.8em; }
 
 #error-body {
   background-color: #f0be1c; }
@@ -1164,5 +1331,409 @@ a > .fa-twitter:hover {
   .btn-ye-full:active, .btn-ye-full:hover {
     background-color: #f0be1c;
     color: #fff; }
+
+#login .form-login .btn {
+  width: 120px;
+  height: 40px;
+  margin: 10px 140px;
+  background-color: #253A78;
+  border-radius: 5px;
+  color: #fff; }
+
+#login .btn:hover {
+  background-color: #213368;
+  cursor: pointer;
+  color: #FEBA33; }
+
+@media screen and (max-width: 1024px) {
+  #hero-section .left {
+    width: 35%; }
+  #hero-section .right {
+    width: 65%; }
+
+  #events .row .col-item {
+    padding: 20px 0px; }
+
+  .timeline .timeline-item .date, .timeline .timeline-item .icon {
+    flex: 2; }
+
+  .mini-section .content {
+    padding: 10px; }
+    .mini-section .content h1 {
+      margin-bottom: 0px; }
+    .mini-section .content .testi-content div section {
+      padding: 0.5em 5em 0 5em; }
+      .mini-section .content .testi-content div section p:nth-child(2) {
+        margin-bottom: 0px; }
+
+  .link-bottom {
+    padding: 10px 20px 0; }
+
+  .mini-section.regist .content p {
+    margin: 1em 5em 0; } }
+@media screen and (max-width: 991px) {
+  #main-navbar .navbar-nav {
+    background-color: #304179;
+    padding: 10px; }
+
+  #main-navbar.navbar-scroll .navbar-nav {
+    padding: 0px; } }
+@media screen and (max-width: 769px) {
+  #hero-section {
+    flex-direction: column; }
+    #hero-section .left, #hero-section .right {
+      height: 50vh;
+      width: 100%; }
+    #hero-section .left {
+      order: 2; }
+    #hero-section .right {
+      padding: 50px;
+      order: 1; }
+      #hero-section .right img {
+        width: 220px; }
+
+  .mini-section .content .testi-content div section {
+    padding: 0.5em 1em 0 1em; }
+
+  #events .row .col-item, #news .row .col-item {
+    padding: 20px 10px; }
+
+  #about .about-text {
+    width: 75%; }
+
+  #contact .contact-item {
+    flex-direction: column; }
+    #contact .contact-item .address {
+      padding: 20px;
+      width: 100%; }
+    #contact .contact-item .map {
+      height: 50vh;
+      width: 100vw; }
+
+  .center-section {
+    width: 85%; }
+
+  /*Mulai login*/
+  #login .container {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+    background-color: #FEBA33;
+    border-radius: 0px;
+    overflow: hidden; }
+
+  #login .logo-atas {
+    width: 100%;
+    float: left;
+    margin-bottom: 10px; }
+
+  #login .logo-atas span img {
+    display: inline-block;
+    width: 180px;
+    margin-top: 20px;
+    float: right; }
+
+  #login .logo-coming {
+    display: none; }
+
+  #login .text-login {
+    display: none; }
+
+  .form-login {
+    height: 450px; }
+
+  #login .margin-zero {
+    margin-right: 0;
+    margin-left: 0; }
+
+  /*selesai login*/ }
+@media screen and (max-width: 480px) {
+  #hero-section .right {
+    margin-top: 20px; }
+
+  #timeline .content {
+    width: 90%; }
+
+  .nav-pills li {
+    padding: 20px 10px; }
+
+  .timeline .timeline-item {
+    flex-direction: column; }
+    .timeline .timeline-item .icon {
+      order: 1;
+      margin: 20px 0; }
+    .timeline .timeline-item .date {
+      order: 2; }
+    .timeline .timeline-item .text {
+      order: 3; }
+
+  .mini-section {
+    height: auto; }
+
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr); }
+    .grid-container div.wide {
+      grid-column: auto; }
+    .grid-container div.tall {
+      grid-row: auto;
+      grid-column: auto; }
+    .grid-container div.big {
+      grid-row: auto;
+      grid-column: auto; }
+
+  .mini-section.regist .content p {
+    margin: 1em 1.5em 0; }
+
+  #about .about-text {
+    width: 85%; }
+
+  /*mulai login*/
+  .wrapLogin {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #FEBA33; }
+
+  #login .container {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+    background-color: #FEBA33;
+    border-radius: 0px;
+    overflow: hidden; }
+
+  #login .col-md-4 {
+    background-color: #253A78; }
+
+  #login .logo-atas {
+    width: 100%;
+    float: left;
+    margin-bottom: 10px; }
+
+  #login .logo-atas img {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 35px; }
+
+  #login .logo-atas span img {
+    display: inline-block;
+    width: 160px;
+    margin-top: 20px;
+    float: right; }
+
+  .form-login {
+    height: 430px;
+    width: 340px; }
+
+  #login .margin-zero {
+    margin-right: 0;
+    margin-left: 0; }
+
+  .form-login .row {
+    width: 80%;
+    margin: auto;
+    margin-top: 5px;
+    max-height: 80px; }
+
+  .form-login .row img {
+    width: 60%;
+    margin: auto; }
+
+  .form-login .row h4 {
+    margin-left: 20px;
+    color: #FEBA33; }
+
+  #login .form-control {
+    display: inline-block;
+    width: 70%;
+    border-radius: 0;
+    border: none;
+    border-bottom: 2px solid grey; }
+
+  #login .form-group {
+    width: 100%;
+    padding: 5px 10px; }
+
+  #login .form-group label {
+    padding: 0 5px; }
+
+  #login .form-group label span {
+    padding-left: 32px; }
+
+  #login .checkbox label {
+    margin: 5px 100px; }
+
+  #login .checkbox label input {
+    margin-right: 10px; }
+
+  #login .form-login .btn {
+    width: 120px;
+    height: 40px;
+    margin: 5px 110px;
+    background-color: #253A78;
+    border-radius: 5px;
+    color: #fff; }
+
+  #login .forgot {
+    width: 70%;
+    margin: auto;
+    margin-top: 5px; }
+
+  #login .regis {
+    width: 85%;
+    margin: auto; } }
+@media screen and (max-width: 326px) {
+  #events, #news {
+    padding-left: 10px;
+    padding-right: 10px; }
+
+  /*mulai login*/
+  #login .container {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+    background-color: #FEBA33;
+    border-radius: 0px;
+    overflow: hidden; }
+
+  #login .logo-atas {
+    width: 100%;
+    float: left;
+    margin-bottom: 10px; }
+
+  #login .logo-atas img {
+    margin-top: 15px;
+    margin-left: 10px;
+    width: 25px; }
+
+  #login .logo-atas span img {
+    display: inline-block;
+    width: 130px;
+    margin-top: 20px;
+    float: right; }
+
+  .form-login {
+    height: 420px;
+    width: 250px; }
+
+  .form-login .row {
+    width: 90%;
+    margin: auto;
+    margin-top: 5px;
+    max-height: 80px; }
+
+  .form-login .row img {
+    width: 70%;
+    margin: auto; }
+
+  .form-login .row h4 {
+    margin-left: 10px;
+    color: #FEBA33;
+    font-size: 1.3em; }
+
+  #login .form-control {
+    display: inline-block;
+    width: 55%;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1.3px solid grey; }
+
+  #login .form-group {
+    width: 100%;
+    padding: 5px 10px; }
+
+  #login .form-group label {
+    padding: 0 5px; }
+
+  #login .form-group label span {
+    padding-left: 28px; }
+
+  #login input:focus {
+    border-bottom: 1.5px solid #FEBA33; }
+
+  #login .checkbox label {
+    margin: 0px 55px;
+    margin-bottom: 5px; }
+
+  #login .checkbox label input {
+    margin-right: 10px; }
+
+  #login .form-login .btn {
+    width: 100px;
+    height: 40px;
+    margin: 0px 75px;
+    background-color: #253A78;
+    border-radius: 5px;
+    color: #fff; }
+
+  #login .forgot {
+    width: 100%;
+    margin: auto;
+    margin-top: 10px; }
+
+  .forgot a {
+    color: #5870BA; }
+
+  .forgot p {
+    margin-bottom: 2px; } }
+@media screen and (min-height: 1024px) and (min-width: 768px) {
+  #events, #timeline, #news, #gallery, #about, #sponsors, #contact {
+    min-height: auto; }
+
+  .grid-container {
+    grid-auto-rows: minmax(150px, auto); }
+
+  #hero-section {
+    flex-direction: column; }
+    #hero-section .left, #hero-section .right {
+      width: 100%; }
+    #hero-section .left {
+      height: 40vh;
+      order: 2; }
+    #hero-section .right {
+      height: 60vh;
+      padding: 50px;
+      order: 1; }
+      #hero-section .right img {
+        width: 220px; }
+
+  .mini-section {
+    height: auto; } }
+@media screen and (max-width: 769px) {
+  h1, #hero-section .left > h1 {
+    font-size: 1.8em; }
+
+  .contact-item .address {
+    font-size: 90%; }
+
+  .center-section p {
+    font-size: 0.8em; } }
+@media screen and (max-width: 480px) {
+  h1, #hero-section .left > h1 {
+    font-size: 1.3em; }
+
+  .small {
+    font-size: 70%; } }
+@media screen and (min-height: 1024px) and (min-width: 768px) {
+  .normal {
+    font-size: 0.9em; }
+
+  #hero-section.hero-not-home p.smaller, .center-section p {
+    font-size: 1em; } }
+@media screen and (min-height: 1366px) and (min-width: 1024px) {
+  #hero-section .right span {
+    font-size: 1.5em; }
+
+  .normal {
+    font-size: 1em; }
+
+  #hero-section.hero-not-home p.smaller, .center-section p {
+    font-size: 1.2em; } }
 
 /*# sourceMappingURL=vocom-main-style.css.map */

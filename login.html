@@ -22,14 +22,27 @@
   <link rel="stylesheet" type="text/css" href="./assets/css/vocom-main-style.css">
 
 </head>
-<body>
+<body style="background-color: #6D7A9D;">
 	<div id="login" class="wrapLogin">
 		<div class="container center-block">
-			<div class="row">
-				<div class="col-sm-5 col-xs-12">
-					<img src="assets/img/backlogin.png" alt="" class="kiri-login">
+			<div class="row margin-zero">
+
+				<!--kolom kiri deskripsi-->
+				<div class="col-md-4">
+					<div class="logo-atas"><img src="assets/img/ugm-white.png" alt="">
+						<img src="assets/img/komsi-white.png" alt=""><span><img src="assets/img/icon-vocomfest.png" alt=""></span>
+					</div>
+					<div class="row col-sm-12 logo-coming">
+						<img src="assets/img/logo-coming.png" alt="">
+					</div>
+					<div class="row col-sm-12 text-login">
+						<a href="index.html"><h3>VOCOMFEST</h3></a>
+						<p>VOCOMfest (Vocational Computer Festival) merupakan acara tahunan yang diselenggarakan oleh Himpunan Mahasiswa Komputer dan Sistem Informasi Sekolah Vokasi UGM.</p>
+					</div>
 				</div>
-				<div class="col-sm-7 col-xs-12">
+
+				<!--kolom kanan form-->
+				<div class="col-md-8">
 					<form action="">
 						<div class="form-login">
 							<div class="row col-sm-12">
@@ -41,11 +54,11 @@
 							<div class="form-inline">
 								<div class="form-group">
 									<label for="">Email <span>:</span></label>
-									<input class="form-control" type="email">
+									<input class="form-control" type="email" placeholder="Leader email">
 								</div>
 								<div class="form-group">
 									<label for="">Password : </label>
-									<input class="form-control" type="password">
+									<input class="form-control" type="password" placeholder="password">
 								</div>
 								<div class="checkbox">
 									<label for="">
@@ -57,15 +70,16 @@
 							<div class="col-sm-12 forgot">
 								<p>Forgot Password? <a href="#">Click here!</a></p>
 							</div>
-							<div class="col-sm-12 regis">
+							<div class="col-sm-12 regis text-center">
 								<p>Don't have any account? <a href="#">Register!</a></p>  
 							</div>
 
 						</div>				
 					</form>
-				</div>	
+				</div>
+				<!--selesai kolom kanan form-->	
+
 			</div>
-					
 		</div>
 	</div>
 </body>
