@@ -450,19 +450,6 @@ footer {
 #login .checkbox label input{
 	margin-right: 10px;
 }
-#login .form-login .btn{
-	width: 120px;
-	height: 40px;
-	margin: 10px 140px;
-	background-color: #253A78;
-	border-radius: 5px;
-	color: #fff;
-}
-#login .btn:hover {
-	background-color: #213368;
-	cursor: pointer;
-	color: #FEBA33;
-}
 #login .forgot {
 	width: 60%;
 	margin: auto;
@@ -571,7 +558,7 @@ ul#nav li a:hover {
 }
 #dashboard .row.content {
 	margin-top: 0px;
-	height: auto;
+	min-height: 100%;
 	width: 100%;
 }
 .box-db {
