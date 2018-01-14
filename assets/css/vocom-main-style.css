@@ -1332,6 +1332,19 @@ a > .fa-twitter:hover {
     background-color: #f0be1c;
     color: #fff; }
 
+#login .form-login .btn {
+  width: 120px;
+  height: 40px;
+  margin: 10px 140px;
+  background-color: #253A78;
+  border-radius: 5px;
+  color: #fff; }
+
+#login .btn:hover {
+  background-color: #213368;
+  cursor: pointer;
+  color: #FEBA33; }
+
 @media screen and (max-width: 1024px) {
   #hero-section .left {
     width: 35%; }
