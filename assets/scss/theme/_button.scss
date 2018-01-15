@@ -30,7 +30,6 @@
     color: $white;
   }
 }
-
 #login .form-login .btn{
   width: 120px;
   height: 40px;
@@ -44,3 +43,10 @@
   cursor: pointer;
   color: #FEBA33;
 }
+.btn-db {
+  width: 120px;
+  margin-bottom: 15px;
+  padding: 5px;
+  background-color: #EEBD22;
+  height: 35px;
+  color: #fff;}
