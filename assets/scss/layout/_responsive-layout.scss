@@ -105,6 +105,43 @@
   .center-section {
     width: 85%;
   }
+
+  /*Mulai login*/
+  #login .container{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+    background-color: #FEBA33;
+    border-radius: 0px;
+    overflow: hidden;
+  }
+  #login .logo-atas {
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+  }
+  #login .logo-atas span img{
+  display: inline-block;
+  width: 180px;
+  margin-top: 20px;
+  float: right;
+  }
+  #login .logo-coming {
+    display: none;
+  }
+  #login .text-login {
+    display: none;
+  }
+  .form-login {
+    height: 450px;
+  }
+  #login .margin-zero {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  /*selesai login*/
 }
 
 @media screen and (max-width: 480px) {
@@ -160,11 +197,205 @@
   #about .about-text {
     width: 85%;
   }
+  /*mulai login*/
+  .wrapLogin {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #FEBA33; }
+
+  #login .container{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+    background-color: #FEBA33;
+    border-radius: 0px;
+    overflow: hidden;
+  }
+  #login .col-md-4 {
+    background-color: #253A78;
+  }
+  #login .logo-atas {
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+  }
+  #login .logo-atas img{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 35px;
+  }
+  #login .logo-atas span img{
+    display: inline-block;
+    width: 160px;
+    margin-top: 20px;
+    float: right;
+  }
+  .form-login {
+    height: 430px;
+    width: 340px;
+  }
+  #login .margin-zero {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .form-login .row{
+    width: 80%;
+    margin: auto;
+    margin-top: 5px;
+    max-height: 80px;
+  }
+  .form-login .row img{
+    width: 60%;
+    margin: auto;
+  }
+
+  .form-login .row h4{
+    margin-left: 20px;
+    color:#FEBA33;
+  }
+  #login .form-control {
+    display: inline-block;
+    width: 70%;
+    border-radius: 0;
+    border:none;
+    border-bottom: 2px solid grey;
+  }
+  #login .form-group {
+    width: 100%;
+    padding: 5px 10px;
+  }
+  #login .form-group label{
+    padding: 0 5px;
+  }
+  #login .form-group label span{
+    padding-left: 32px;
+  }
+  #login .checkbox label{
+    margin: 5px 100px;
+  }
+
+  #login .checkbox label input{
+    margin-right: 10px;
+  }
+  #login .form-login .btn{
+    width: 120px;
+    height: 40px;
+    margin: 5px 110px;
+    background-color: #253A78;
+    border-radius: 5px;
+    color: #fff;
+  }
+  #login .forgot {
+    width: 70%;
+    margin: auto;
+    margin-top: 5px;
+  }
+  #login .regis {
+    width: 85%;
+    margin: auto;
+  }
 }
 @media screen and (max-width: 326px) {
   #events,#news {
   	padding-left: 10px;
   	padding-right: 10px;
+  }
+  /*mulai login*/
+  #login .container{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+    background-color: #FEBA33;
+    border-radius: 0px;
+    overflow: hidden;
+  }
+  #login .logo-atas {
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+  }
+  #login .logo-atas img{
+    margin-top: 15px;
+    margin-left: 10px;
+    width: 25px;
+  }
+  #login .logo-atas span img{
+    display: inline-block;
+    width: 130px;
+    margin-top: 20px;
+    float: right;
+  }
+  .form-login {
+    height: 420px;
+    width: 250px;
+  }
+  .form-login .row{
+    width: 90%;
+    margin: auto;
+    margin-top: 5px;
+    max-height: 80px;
+  }
+  .form-login .row img{
+    width: 70%;
+    margin: auto;
+  }
+
+  .form-login .row h4{
+    margin-left: 10px;
+    color:#FEBA33;
+    font-size: 1.3em;
+  }
+  #login .form-control {
+    display: inline-block;
+    width: 55%;
+    border-radius: 0;
+    border:none;
+    border-bottom: 1.3px solid grey;
+  }
+  #login .form-group {
+    width: 100%;
+    padding: 5px 10px;
+  }
+  #login .form-group label{
+    padding: 0 5px;
+  }
+  #login .form-group label span{
+    padding-left: 28px;
+  }
+  #login input:focus {
+      border-bottom: 1.5px solid #FEBA33;
+  }
+  #login .checkbox label{
+    margin: 0px 55px;
+    margin-bottom: 5px;
+  }
+
+  #login .checkbox label input{
+    margin-right: 10px;
+  }
+  #login .form-login .btn{
+    width: 100px;
+    height: 40px;
+    margin: 0px 75px;
+    background-color: #253A78;
+    border-radius: 5px;
+    color: #fff;
+  }
+  #login .forgot {
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .forgot a {
+    color: #5870BA;
+  }
+  .forgot p {
+    margin-bottom: 2px;
   }
 }
 // --------------------------------- special for ipad
@@ -196,6 +427,99 @@
   .mini-section {
     height: auto;
   }
+  /*Mulai login*/
+  .wrapLogin {
+  position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #FEBA33; }
+  #login .col-md-4{
+    -ms-flex:0 0 100%;
+    flex:0 0 100%;
+    max-width: 100%;
+    height:100px;
+  }
+  #login .col-md-8{
+    -ms-flex:0 0 100%;
+    flex:0 0 100%;
+    max-width: 100%;
+    min-height : 100%;
+  }
+  .form-login {
+    height: 80vh;
+    width: 90%;
+  }
+  .form-login .row {
+    width: 70%;
+    margin: auto;
+    margin-top: 15px;
+    max-height: 200px;
+  }
+  .form-login .row h4 {
+    font-size: 2.7em;
+    margin-left: 40px;
+    color: #FEBA33;
+  }
+  #login .form-group {
+    width: 100%;
+    padding: 15px 25px;
+}
+  #login .form-group label {
+    font-size: 2em;
+    padding: 0 25px;
+  }
+  #login .form-control {
+      width: 60%;
+  }
+  #login .form-group label span {
+    padding-left: 65px;
+  }
+  #login .checkbox label {
+    width: 100%;
+    margin: 25px 20px;
+    font-size: 2em;
+  }
+  #login .form-login .btn {
+    width: 150px;
+    height: 60px;
+    margin: 10px 250px;
+    font-size: 1.8em;
+  }
+  #login .logo-atas img {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 55px;
+  }
+  #login .logo-atas span img {
+    display: inline-block;
+    width: 250px;
+    margin-top: 25px;
+    float: right;
+  }
+    .cr, .radio .cr {
+      position: relative;
+      display: inline-block;
+      border: 1px solid #a9a9a9;
+      border-radius: .25em;
+      width: .8em;
+      height: .8em;
+      float: left;
+      margin-right: .5em;
+  }
+  #login .forgot {
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 1.8em;
+  }
+  #login .regis {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 1.8em;
+  }
+
+  /*selesai login*/
 }
 
 // ERROR AND REGISTER PAGE
@@ -242,3 +566,10 @@
 }
 
 // END OF ERROR AND REGISTER PAGE
+@media screen and (max-width: 321px) {
+  #header {
+  	.navbar-expand-lg {
+  		justify-content: center;
+  	}
+  }
+}
