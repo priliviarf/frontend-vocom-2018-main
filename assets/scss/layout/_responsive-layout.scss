@@ -566,3 +566,10 @@
 }
 
 // END OF ERROR AND REGISTER PAGE
+@media screen and (max-width: 321px) {
+  #header {
+  	.navbar-expand-lg {
+  		justify-content: center;
+  	}
+  }
+}
