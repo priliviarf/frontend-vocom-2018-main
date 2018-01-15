@@ -527,7 +527,7 @@ footer {
 }
 #login .text-login {
 	margin-top: 30px;
-	margin-left: 20px; 
+	margin-left: 20px;
 }
 #login .text-login h3{
 	color: #FEBA33;
@@ -617,11 +617,16 @@ footer {
 /*--------Dashboard--------*/
 #dashboard div#header {
 	width: 100%;
-	height: 80px;
 	color: white;
 	border-bottom: 2px solid #E2BF3D;
 	background-color: #36373B;
 	margin: 0 auto;
+}
+#header {
+	padding: 10px 0px;
+	.navbar-expand-lg {
+		justify-content: space-between;
+	}
 }
 .logo {
 	float: left;
@@ -650,13 +655,11 @@ footer {
 ul#nav {
 	margin-top: 30px;
 }
-ul#nav li {
-
-}
 ul#nav li a {
+	@include flexbox();
+	align-items: center;
 	width: 100%;
-	color: #ccc;
-	display: inline-block;
+	color: $white;
 	padding: 10px;
 	font-size: 1em;
 	-webkit-transition: 0.2s;
@@ -665,7 +668,7 @@ ul#nav li a {
 	transition: 0.2s;
 }
 ul#nav li a span {
-	padding-left: 20px;
+	padding-left: 25px;
 	display: inline-block;
 }
 ul#nav li a i {
@@ -695,12 +698,14 @@ ul#nav li a:hover {
 #dashboard .container-fluid {
     margin-right: 0px;
     padding-left: 0px;
+		padding-right: 0px;
     width: 100%;
     height: auto;
 }
 .box-db {
 	background-color: #EBEBEB;
 	margin: 0;
+	padding-bottom: 20px;
 }
 #dashboard .sidenav {
     height: 100%;
@@ -708,8 +713,7 @@ ul#nav li a:hover {
 }
 #dashboard .container-fluid .bigbox {
 	overflow: hidden;
-	margin-top: 35px;
-	margin-left: 20px;
+	margin-top: 30px;
 	background-color: #fff;
 }
 #dashboard .smallBox {
@@ -752,8 +756,191 @@ div h2.title-db{
 	margin-top: 25px;
     margin-right: 30px;
 }
-.margin-zero {
-	margin: 0px;
-	padding: 0px;
-}
 /*End of dashboard*/
+
+/*Detail Event*/
+//---------header
+.event-top {
+	background-color: #304179;
+}
+#event-detail {
+	max-height: 88vh;
+  background-attachment: fixed;
+  background-color: #F0BE1C;
+  background-image: url("../img/travel.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain; }
+  #event-detail .left {
+      color: #304179; }
+	#event-detail .left p{
+		color: #000;
+	}
+    #event-detail .left > h1 {
+      font-size: 2.5em;
+      letter-spacing: 0.05em;
+      position: relative;
+      margin-left: 50px;
+      margin-top: -120px; }
+      #event-detail .left > h1:before {
+        content: '';
+        background-color: #f0be1c;
+        height: 2px;
+        left: 0;
+        position: absolute;
+        top: -20px;
+        width: 60px; }
+#event-detail {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+  #event-detail .left, #event-detail .right {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    padding: 40px; }
+  #event-detail .left {
+    align-items: flex-start;
+    width: 40%; }
+  #event-detail .right {
+    align-items: center;
+    width: 60%; }
+    #event-detail .right img {
+      width: 300px;
+      margin: 20px 0px 0px 100px;}
+    #event-detail .right span {
+      margin-top: 15px; }
+.event-btn {
+	background-color: #304179;
+	color: #fff;
+	border: 2px solid #304179;
+	margin-left: 0px;
+	float: left;
+}
+//selesai header
+.event-hide-one {
+	width: 200px;
+	display: none;
+}
+.event-logo {
+	max-width: 300px;
+	margin-bottom: 50px;
+}
+.event-pd {
+	padding-left: 0px;
+}
+.event-mg {
+	margin-left: 60px;
+}
+.nav-event {
+	margin-bottom: 50px;
+}
+.event-contact h4{
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.special {
+	padding-left: 10px;
+	border-left: 2px solid #304179;
+}
+#one h3.event-bold,#two h3.event-bold,#three h3.event-bold, #four h3.event-bold,#five h3.event-bold,#six h3.event-bold {
+	font-size: 2em;
+	color: #304179;
+	font-weight: 600px;
+}
+
+#one hr,#two hr,#three hr,#four hr,#five hr,#six hr,  {
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 2px solid #F0BE1C;
+    margin: 1em 0;
+    padding: 0; 
+}
+
+//link effect 
+.link-effect a {
+    position: relative;
+    display: inline-block;
+    margin: 5px 5px;
+    outline: none;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0 0 1px rgba(255,255,255,0.3);
+    font-size: 1.35em;
+}
+.cl-effect-14 a {
+	padding: 0 20px;
+	height: 45px;
+	line-height: 45px;
+}
+
+.cl-effect-14 a::before,
+.cl-effect-14 a::after {
+	position: absolute;
+	width: 45px;
+	height: 2px;
+	background: #000;
+	content: '';
+	opacity: 0.2;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	pointer-events: none;
+}
+
+.cl-effect-14 a::before {
+	top: 0;
+	left: 0;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	transform: rotate(90deg);
+	-webkit-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+
+.cl-effect-14 a::after {
+	right: 0;
+	bottom: 0;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	transform: rotate(90deg);
+	-webkit-transform-origin: 100% 0;
+	-moz-transform-origin: 100% 0;
+	transform-origin: 100% 0;
+}
+
+.cl-effect-14 a:hover::before,
+.cl-effect-14 a:hover::after,
+.cl-effect-14 a:focus::before,
+.cl-effect-14 a:focus::after {
+	opacity: 1;
+}
+
+.cl-effect-14 a:hover::before,
+.cl-effect-14 a:focus::before {
+	left: 50%;
+	-webkit-transform: rotate(0deg) translateX(-50%);
+	-moz-transform: rotate(0deg) translateX(-50%);
+	transform: rotate(0deg) translateX(-50%);
+}
+
+.cl-effect-14 a:hover::after,
+.cl-effect-14 a:focus::after {
+	right: 50%;
+	-webkit-transform: rotate(0deg) translateX(50%);
+	-moz-transform: rotate(0deg) translateX(50%);
+	transform: rotate(0deg) translateX(50%);
+}
+
+/*End of Detail Event*/

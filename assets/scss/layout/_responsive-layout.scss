@@ -61,6 +61,33 @@
       padding: 0px;
     }
   }
+  /*Detail event*/
+  #event-detail {
+  max-height: 90vh;}
+  #event-detail .left, #event-detail .right {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    padding: 40px; }
+  #event-detail .left {
+    align-items: flex-start;
+    width: 50%; }
+  #event-detail .right {
+    align-items: center;
+    width: 50%; }
+    #event-detail .right img {
+      width: 300px;
+      margin: 20px 0px 0px 10px;}
+  .event-mg {
+    margin-left: 20px;
+  }
+
+  /*End of detail event*/
 }
 
 @media screen and (max-width: 769px) {
@@ -142,6 +169,49 @@
     margin-left: 0;
   }
   /*selesai login*/
+
+  /*Mulai Detail Event*/
+  #event-detail {
+  max-height: 100vh;}
+  #event-detail .left{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    padding: 0px; }
+  #event-detail .left {
+    margin-left: 10px;
+    width: 70%; }
+
+  #event-detail .right {
+    display: none; }
+  .event-mg {
+    margin: 0px 23%;
+    height: 60vh;
+  }
+  .event-mg h1 {
+    margin-left: 25%;
+  }
+  .event-mg h1 span{
+    margin-left: -30px;
+  }
+  .event-btn {
+    margin-left: 30%;
+  }
+  .event-hide-one {
+    margin-top: 5px;
+    width: 200px;
+    display: block;
+  }
+  .event-hide-one img{
+    width: 250px;
+  }
+
+  /*Selesai Detail Event*/
 }
 
 @media screen and (max-width: 480px) {
@@ -297,6 +367,35 @@
     width: 85%;
     margin: auto;
   }
+  /*Selesai login*/
+  
+  /*mulai detail event*/
+  #event-detail .left {
+    width: 90%; }
+
+  .event-hide-one img {
+    margin-left: 50px;
+    width: 200px;
+  }
+  .event-mg {
+    margin: 0px 10%;
+  }
+  .event-mg h1 {
+    margin-left: 20%;
+    font-size: 2em;
+  }
+  .event-mg h1 span {
+    margin-left: -20px;
+  }
+  .event-hide-one img {
+    margin-left: 50px;
+    width: 250px;
+  }
+  .left p {
+    font-size: 1.2em;
+  }
+  /*selesai detail event*/
+
 }
 @media screen and (max-width: 326px) {
   #events,#news {
@@ -397,6 +496,40 @@
   .forgot p {
     margin-bottom: 2px;
   }
+  /*mulai detail event*/
+  #event-detail .left {
+    width: 90%; }
+
+  .event-hide-one img {
+    margin-left: 50px;
+    width: 200px;
+  }
+  .event-mg {
+    margin: 0px 10%;
+  }
+  .event-mg h1 {
+    margin-left: 22%;
+    font-size: 1.5em;
+  }
+  .event-mg h1 span {
+    margin-left: -20px;
+  }
+  .event-hide-one img {
+    margin-left: 50px;
+    width: 200px;
+  }
+  .left p {
+    font-size: 1.1em;
+  }
+  .event-btn {
+    border: 2px solid #304179;
+    margin-left: 50px;
+  }
+  .event-logo {
+    max-width: 250px;
+    margin-bottom: 30px;
+  }
+  /*selesai detail event*/
 }
 // --------------------------------- special for ipad
 @media screen and (min-height: 1024px) and (min-width: 768px){
@@ -518,8 +651,32 @@
     margin-top: 20px;
     font-size: 1.8em;
   }
-  
+
   /*selesai login*/
+  /*Mulai Event detail*/
+  .event-hide-one img {
+    width: 350px;
+  }
+  .event-mg h1 {
+    font-size: 2.2em;
+    margin-left: 25%;
+  }
+  #event-detail .left p {
+    margin-bottom: 50px;
+    font-size: 1.6em;
+  }
+  .event-btn {
+    width: 180px;
+    height: 50px;
+    margin-left: 30%;
+  }
+  .event-hide-one {
+    margin-top: 50px;
+    width: 200px;
+    display: block;
+  }
+  /*selesai Event detail*/
+
 }
 
 // ERROR AND REGISTER PAGE
@@ -566,3 +723,10 @@
 }
 
 // END OF ERROR AND REGISTER PAGE
+@media screen and (max-width: 321px) {
+  #header {
+  	.navbar-expand-lg {
+  		justify-content: center;
+  	}
+  }
+}
