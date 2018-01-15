@@ -668,44 +668,29 @@ footer {
 
 #error-body {
   padding: 30px;
+  width: 100%;
   height: auto; }
   #error-body #vocom-logo {
-    margin: 0 auto;
-    width: 18%;
-    display: block; }
-
-.content {
-  width: 100%;
-  margin-top: 25px;
-  overflow: hidden;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-.third-quarter-col {
-  width: 75%;
-  display: inline-block;
-  float: left; }
-  .third-quarter-col #error-img {
-    width: 70%;
+    width: 100%; }
+  #error-body #error-img {
+    width: 75%;
     margin: auto;
     display: block; }
-
-.quarter-col {
-  display: inline-block;
-  width: 25%; }
-  .quarter-col p {
+  #error-body p {
     margin-bottom: 50px; }
-    .quarter-col p span {
+    #error-body p span {
       font-weight: bold; }
-  .quarter-col a.error-btn {
-    background-color: #3498db;
-    color: white;
+  #error-body a.error-btn {
+    background-color: #304179;
+    color: #fff;
     padding: 15px 25px;
-    border-radius: 5px; }
-    .quarter-col a.error-btn:hover {
-      background-color: #177fc5;
-      transition: 0.5s; }
+    border-radius: 5px;
+    border: 2px solid #304179;
+    transition: 0.3s; }
+    #error-body a.error-btn:hover {
+      background-color: #fff;
+      color: #304179;
+      transition: 0.3s; }
 
 #error-footer {
   background-color: #304179; }
@@ -718,9 +703,6 @@ footer {
 
 .center {
   margin: 0 auto; }
-
-.overflow-hid {
-  overflow: hidden; }
 
 #register {
   background-color: #304179;
@@ -765,7 +747,8 @@ footer {
           border-bottom: 1px solid #304179;
           width: 95%; }
           #register .regist-content .container .form-regist .tab-content input:focus {
-            outline: none; }
+            outline: none;
+            border-width: 2px; }
         #register .regist-content .container .form-regist .tab-content select {
           width: 95%; }
       #register .regist-content .container .form-regist .phone-num input {
@@ -786,7 +769,12 @@ footer {
         color: #304179;
         background-color: inherit;
         border: 2px solid #304179 !important;
-        border-radius: 5px; }
+        border-radius: 5px;
+        transition: 0.3s; }
+        #register .regist-content .container .form-regist .regist-btn:hover {
+          background-color: #304179;
+          color: #fff;
+          transition: 0.3s ease-in-out; }
       #register .regist-content .container .form-regist .log-here {
         text-align: center !important;
         margin: 0; }
@@ -794,6 +782,9 @@ footer {
           font-weight: bold !important; }
         #register .regist-content .container .form-regist .log-here a {
           color: inherit; }
+          #register .regist-content .container .form-regist .log-here a:hover {
+            color: #f0be1c;
+            transition: 0.3s ease-in-out; }
   #register .mg-pd-0 {
     margin: 0 !important;
     margin-left: 0 !important;
@@ -824,29 +815,271 @@ footer {
       font-size: 2em;
       line-height: 1.2em;
       text-align: right !important; }
-  @media screen and (max-width: 768px) {
-    #register #vocom-logo-color {
-      width: 40% !important; }
-    #register .regist-content {
-      width: 100% !important; }
-    #register .desc-form {
-      position: relative !important;
-      width: 100% !important;
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%) !important;
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%) !important;
-      border-radius: 25px;
-      margin-top: 25px; }
-      #register .desc-form p {
-        direction: ltr !important;
-        padding: 50px 25px !important; }
-      #register .desc-form .desc-logo {
-        width: 30% !important; } }
-  @media screen and (max-width: 480px) {
-    #register body {
-      font-size: 0.8em; }
-    #register #vocom-logo-color {
-      width: 75% !important; } }
 
+/*-------Login page-------*/
+.wrapLogin {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #6D7A9D; }
+
+#login .container {
+  margin-top: 30px;
+  padding: 0;
+  height: 500px;
+  background-color: #253A78;
+  border-radius: 20px;
+  overflow: hidden; }
+
+#login .col-md-4 {
+  background-color: #253A78; }
+
+#login .col-md-8 {
+  background-color: #FEBA33;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 5% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 5% 100%); }
+
+#login .logo-atas {
+  width: 100%;
+  float: left;
+  margin-bottom: 30px; }
+
+#login .logo-atas img {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 40px; }
+
+#login .logo-atas span img {
+  display: none; }
+
+#login .logo-coming {
+  width: 230px;
+  height: 110px;
+  margin: auto;
+  margin-top: 10px; }
+
+#login .col-md-4 img {
+  max-width: 100%; }
+
+#login .text-login {
+  margin-top: 30px;
+  margin-left: 20px; }
+
+#login .text-login h3 {
+  color: #FEBA33; }
+
+#login .text-login p {
+  color: #dce1ea; }
+
+.form-login {
+  width: 390px;
+  height: 440px;
+  background-color: #fff;
+  margin: 30px auto;
+  border-radius: 10px;
+  overflow: hidden; }
+
+.form-login .row {
+  width: 70%;
+  margin: auto;
+  margin-top: 15px;
+  max-height: 100px; }
+
+.form-login .row img {
+  width: 80%;
+  margin: auto; }
+
+.form-login .row h4 {
+  margin-left: 20px;
+  color: #FEBA33; }
+
+#login .form-control {
+  display: inline-block;
+  width: 70%;
+  border-radius: 0;
+  border: none;
+  border-bottom: 2px solid grey; }
+
+#login .form-group {
+  width: 100%;
+  padding: 5px 25px; }
+
+#login .form-group label {
+  padding: 0 5px; }
+
+#login .form-group label span {
+  padding-left: 32px; }
+
+#login input:focus {
+  border-bottom: 2px solid #FEBA33; }
+
+#login .checkbox label {
+  margin: 5px 130px; }
+
+#login .checkbox label input {
+  margin-right: 10px; }
+
+#login .forgot {
+  width: 60%;
+  margin: auto;
+  margin-top: 5px; }
+
+.forgot a {
+  color: #5870BA; }
+
+.forgot p {
+  margin-bottom: 2px; }
+
+#login a:hover {
+  color: #FEBA33;
+  cursor: pointer; }
+
+#login .regis {
+  width: 70%;
+  margin: auto; }
+
+.regis a {
+  color: #5870BA; }
+
+#login a:hover {
+  color: #FEBA33;
+  cursor: pointer; }
+
+/*End of login page*/
+/*--------Dashboard--------*/
+#dashboard div#header {
+  width: 100%;
+  height: 80px;
+  color: white;
+  border-bottom: 2px solid #E2BF3D;
+  background-color: #36373B;
+  margin: 0 auto; }
+
+.logo {
+  float: left;
+  max-width: 200px;
+  margin: 0 auto; }
+
+.logo a img {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 200px; }
+
+.profil-db {
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  background-color: #ccc;
+  margin: 20px auto; }
+
+.profil-title {
+  color: #ccc; }
+
+ul#nav {
+  margin-top: 30px; }
+
+ul#nav li a {
+  width: 100%;
+  color: #ccc;
+  display: inline-block;
+  padding: 10px;
+  font-size: 1em;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s; }
+
+ul#nav li a span {
+  padding-left: 20px;
+  display: inline-block; }
+
+ul#nav li a i {
+  width: 5px; }
+
+ul#nav li a:hover {
+  color: #FEBA33; }
+
+#dashboard .container-fluid .row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: 0px;
+  margin-left: 0px; }
+
+#dashboard .row.content {
+  background-color: #111111;
+  margin-top: 0px;
+  min-height: 600px;
+  height: auto;
+  width: 100%; }
+
+#dashboard .container-fluid {
+  margin-right: 0px;
+  padding-left: 0px;
+  width: 100%;
+  height: auto; }
+
+.box-db {
+  background-color: #EBEBEB;
+  margin: 0; }
+
+#dashboard .sidenav {
+  height: 100%;
+  background-color: #111111; }
+
+#dashboard .container-fluid .bigbox {
+  overflow: hidden;
+  margin-top: 35px;
+  margin-left: 20px;
+  background-color: #fff; }
+
+#dashboard .smallBox {
+  max-width: 30%;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  background-color: #fff; }
+
+#dashboard .col-sm-10 {
+  margin: 0px;
+  padding-right: 40px; }
+
+.title-db {
+  color: #EEBD22;
+  padding-top: 10px; }
+
+div h2.title-db {
+  padding-top: 5px;
+  font-size: 2.5em; }
+
+.title-event-db {
+  color: #EEBD22;
+  padding-top: 15px; }
+
+.event-db {
+  color: #111111; }
+
+.news-db {
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+#dashboard .col-sm-12 p {
+  margin-top: 0px;
+  margin-bottom: 5px; }
+
+.btn-out {
+  float: right;
+  margin-top: 25px;
+  margin-right: 30px; }
+
+.margin-zero {
+  margin: 0px;
+  padding: 0px; }
+
+/*End of dashboard*/
 html, body {
   font-family: 'Fira-Regular',sans-serif; }
 
@@ -1187,6 +1420,27 @@ a > .fa-twitter:hover {
     background-color: #f0be1c;
     color: #fff; }
 
+#login .form-login .btn {
+  width: 120px;
+  height: 40px;
+  margin: 10px 140px;
+  background-color: #253A78;
+  border-radius: 5px;
+  color: #fff; }
+
+#login .btn:hover {
+  background-color: #213368;
+  cursor: pointer;
+  color: #FEBA33; }
+
+.btn-db {
+  width: 120px;
+  margin-bottom: 15px;
+  padding: 5px;
+  background-color: #EEBD22;
+  height: 35px;
+  color: #fff; }
+
 @media screen and (max-width: 1024px) {
   #hero-section .left {
     width: 35%; }
@@ -1253,7 +1507,44 @@ a > .fa-twitter:hover {
       width: 100vw; }
 
   .center-section {
-    width: 85%; } }
+    width: 85%; }
+
+  /*Mulai login*/
+  #login .container {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+    background-color: #FEBA33;
+    border-radius: 0px;
+    overflow: hidden; }
+
+  #login .logo-atas {
+    width: 100%;
+    float: left;
+    margin-bottom: 10px; }
+
+  #login .logo-atas span img {
+    display: inline-block;
+    width: 180px;
+    margin-top: 20px;
+    float: right; }
+
+  #login .logo-coming {
+    display: none; }
+
+  #login .text-login {
+    display: none; }
+
+  .form-login {
+    height: 450px; }
+
+  #login .margin-zero {
+    margin-right: 0;
+    margin-left: 0; }
+
+  /*selesai login*/ }
 @media screen and (max-width: 480px) {
   #hero-section .right {
     margin-top: 20px; }
@@ -1292,11 +1583,201 @@ a > .fa-twitter:hover {
     margin: 1em 1.5em 0; }
 
   #about .about-text {
-    width: 85%; } }
+    width: 85%; }
+
+  /*mulai login*/
+  .wrapLogin {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #FEBA33; }
+
+  #login .container {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+    background-color: #FEBA33;
+    border-radius: 0px;
+    overflow: hidden; }
+
+  #login .col-md-4 {
+    background-color: #253A78; }
+
+  #login .logo-atas {
+    width: 100%;
+    float: left;
+    margin-bottom: 10px; }
+
+  #login .logo-atas img {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 35px; }
+
+  #login .logo-atas span img {
+    display: inline-block;
+    width: 160px;
+    margin-top: 20px;
+    float: right; }
+
+  .form-login {
+    height: 430px;
+    width: 340px; }
+
+  #login .margin-zero {
+    margin-right: 0;
+    margin-left: 0; }
+
+  .form-login .row {
+    width: 80%;
+    margin: auto;
+    margin-top: 5px;
+    max-height: 80px; }
+
+  .form-login .row img {
+    width: 60%;
+    margin: auto; }
+
+  .form-login .row h4 {
+    margin-left: 20px;
+    color: #FEBA33; }
+
+  #login .form-control {
+    display: inline-block;
+    width: 70%;
+    border-radius: 0;
+    border: none;
+    border-bottom: 2px solid grey; }
+
+  #login .form-group {
+    width: 100%;
+    padding: 5px 10px; }
+
+  #login .form-group label {
+    padding: 0 5px; }
+
+  #login .form-group label span {
+    padding-left: 32px; }
+
+  #login .checkbox label {
+    margin: 5px 100px; }
+
+  #login .checkbox label input {
+    margin-right: 10px; }
+
+  #login .form-login .btn {
+    width: 120px;
+    height: 40px;
+    margin: 5px 110px;
+    background-color: #253A78;
+    border-radius: 5px;
+    color: #fff; }
+
+  #login .forgot {
+    width: 70%;
+    margin: auto;
+    margin-top: 5px; }
+
+  #login .regis {
+    width: 85%;
+    margin: auto; } }
 @media screen and (max-width: 326px) {
   #events, #news {
     padding-left: 10px;
-    padding-right: 10px; } }
+    padding-right: 10px; }
+
+  /*mulai login*/
+  #login .container {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+    background-color: #FEBA33;
+    border-radius: 0px;
+    overflow: hidden; }
+
+  #login .logo-atas {
+    width: 100%;
+    float: left;
+    margin-bottom: 10px; }
+
+  #login .logo-atas img {
+    margin-top: 15px;
+    margin-left: 10px;
+    width: 25px; }
+
+  #login .logo-atas span img {
+    display: inline-block;
+    width: 130px;
+    margin-top: 20px;
+    float: right; }
+
+  .form-login {
+    height: 420px;
+    width: 250px; }
+
+  .form-login .row {
+    width: 90%;
+    margin: auto;
+    margin-top: 5px;
+    max-height: 80px; }
+
+  .form-login .row img {
+    width: 70%;
+    margin: auto; }
+
+  .form-login .row h4 {
+    margin-left: 10px;
+    color: #FEBA33;
+    font-size: 1.3em; }
+
+  #login .form-control {
+    display: inline-block;
+    width: 55%;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1.3px solid grey; }
+
+  #login .form-group {
+    width: 100%;
+    padding: 5px 10px; }
+
+  #login .form-group label {
+    padding: 0 5px; }
+
+  #login .form-group label span {
+    padding-left: 28px; }
+
+  #login input:focus {
+    border-bottom: 1.5px solid #FEBA33; }
+
+  #login .checkbox label {
+    margin: 0px 55px;
+    margin-bottom: 5px; }
+
+  #login .checkbox label input {
+    margin-right: 10px; }
+
+  #login .form-login .btn {
+    width: 100px;
+    height: 40px;
+    margin: 0px 75px;
+    background-color: #253A78;
+    border-radius: 5px;
+    color: #fff; }
+
+  #login .forgot {
+    width: 100%;
+    margin: auto;
+    margin-top: 10px; }
+
+  .forgot a {
+    color: #5870BA; }
+
+  .forgot p {
+    margin-bottom: 2px; } }
 @media screen and (min-height: 1024px) and (min-width: 768px) {
   #events, #timeline, #news, #gallery, #about, #sponsors, #contact {
     min-height: auto; }
@@ -1319,7 +1800,127 @@ a > .fa-twitter:hover {
         width: 220px; }
 
   .mini-section {
-    height: auto; } }
+    height: auto; }
+
+  /*Mulai login*/
+  .wrapLogin {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #FEBA33; }
+
+  #login .col-md-4 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    height: 100px; }
+
+  #login .col-md-8 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    min-height: 100%; }
+
+  .form-login {
+    height: 80vh;
+    width: 90%; }
+
+  .form-login .row {
+    width: 70%;
+    margin: auto;
+    margin-top: 15px;
+    max-height: 200px; }
+
+  .form-login .row h4 {
+    font-size: 2.7em;
+    margin-left: 40px;
+    color: #FEBA33; }
+
+  #login .form-group {
+    width: 100%;
+    padding: 15px 25px; }
+
+  #login .form-group label {
+    font-size: 2em;
+    padding: 0 25px; }
+
+  #login .form-control {
+    width: 60%; }
+
+  #login .form-group label span {
+    padding-left: 65px; }
+
+  #login .checkbox label {
+    width: 100%;
+    margin: 25px 20px;
+    font-size: 2em; }
+
+  #login .form-login .btn {
+    width: 150px;
+    height: 60px;
+    margin: 10px 250px;
+    font-size: 1.8em; }
+
+  #login .logo-atas img {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 55px; }
+
+  #login .logo-atas span img {
+    display: inline-block;
+    width: 250px;
+    margin-top: 25px;
+    float: right; }
+
+  .cr, .radio .cr {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #a9a9a9;
+    border-radius: .25em;
+    width: .8em;
+    height: .8em;
+    float: left;
+    margin-right: .5em; }
+
+  #login .forgot {
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 1.8em; }
+
+  #login .regis {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 1.8em; }
+
+  /*selesai login*/ }
+@media screen and (max-width: 768px) {
+  #error-img {
+    width: 100%; } }
+@media screen and (max-width: 768px) {
+  #register #vocom-logo-color {
+    width: 40% !important; }
+  #register .regist-content {
+    width: 100% !important; }
+  #register .desc-form {
+    position: relative !important;
+    width: 100% !important;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%) !important;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%) !important;
+    border-radius: 25px;
+    margin-top: 25px; }
+    #register .desc-form p {
+      direction: ltr !important;
+      padding: 50px 25px !important; }
+    #register .desc-form .desc-logo {
+      width: 30% !important; } }
+@media screen and (max-width: 768px) and (max-width: 480px) {
+  body {
+    font-size: 0.8em; }
+
+  #vocom-logo-color {
+    width: 75% !important; } }
 @media screen and (max-width: 769px) {
   h1, #hero-section .left > h1 {
     font-size: 1.8em; }
