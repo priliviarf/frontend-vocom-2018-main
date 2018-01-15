@@ -30,6 +30,15 @@
     color: $white;
   }
 }
+.btn-ye-full-2 {
+  background-color:  $yellow;
+  color: $white;
+  opacity: 0.9;
+  &:active,&:hover {
+    color: $white;
+    opacity: 1;
+  }
+}
 #login .form-login .btn{
   width: 120px;
   height: 40px;

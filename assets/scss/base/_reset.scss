@@ -90,3 +90,9 @@ a {
 .navbar-dark .navbar-toggler, .navbar-toggler:focus, .navbar-toggler:hover {
 	border-color: transparent
 }
+.modal-content {
+	padding: 10px 20px;
+}
+.input-group-addon,.form-control {
+	@include radius(0px);
+}

@@ -675,7 +675,7 @@ ul#nav li a i {
 	width: 5px;
 }
 
-ul#nav li a:hover {
+ul#nav li a:hover,ul#nav li a.active {
 	color: #FEBA33;
 }
 

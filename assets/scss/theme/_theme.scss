@@ -9,6 +9,9 @@ html,body {
 		color: $blue;
 	}
 }
+button {
+	cursor: pointer;
+}
 // ------------------------ navbar
 #main-navbar {
 	@include transition(0.5);

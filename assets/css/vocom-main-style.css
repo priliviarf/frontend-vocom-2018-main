@@ -408,6 +408,15 @@ a {
 .navbar-dark .navbar-toggler, .navbar-toggler:focus, .navbar-toggler:hover {
   border-color: transparent; }
 
+.modal-content {
+  padding: 10px 20px; }
+
+.input-group-addon, .form-control {
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -o-border-radius: 0px; }
+
 #main-navbar {
   padding-top: 15px; }
   #main-navbar.navbar-scroll {
@@ -1006,7 +1015,7 @@ ul#nav li a span {
 ul#nav li a i {
   width: 5px; }
 
-ul#nav li a:hover {
+ul#nav li a:hover, ul#nav li a.active {
   color: #FEBA33; }
 
 #dashboard .container-fluid .row {
@@ -1094,6 +1103,9 @@ html, body {
   line-height: 1.5em; }
   .link-bla-blu:hover {
     color: #304179; }
+
+button {
+  cursor: pointer; }
 
 #main-navbar {
   transition: all 0.5s ease-in-out;
@@ -1425,6 +1437,14 @@ a > .fa-twitter:hover {
   .btn-ye-full:active, .btn-ye-full:hover {
     background-color: #f0be1c;
     color: #fff; }
+
+.btn-ye-full-2 {
+  background-color: #f0be1c;
+  color: #fff;
+  opacity: 0.9; }
+  .btn-ye-full-2:active, .btn-ye-full-2:hover {
+    color: #fff;
+    opacity: 1; }
 
 #login .form-login .btn {
   width: 120px;
@@ -1944,7 +1964,14 @@ a > .fa-twitter:hover {
     font-size: 1.3em; }
 
   .small {
-    font-size: 70%; } }
+    font-size: 70%; }
+
+  table {
+    font-size: 90%;
+    line-height: 1.5em; }
+
+  .bigbox button {
+    font-size: 90%; } }
 @media screen and (min-height: 1024px) and (min-width: 768px) {
   .normal {
     font-size: 0.9em; }
