@@ -38,6 +38,14 @@
 .tab-content {
 	margin-top: 20px;
 }
+// ----------------------- flex
+.flex {
+	@include flexbox();
+}
+.flex-center {
+	align-items: center;
+	justify-content: center;
+}
 // ----------------------- grid
 .grid-container {
 	display: grid;

@@ -366,6 +366,9 @@
 .pd-r-30 {
   padding-right: 30px; }
 
+.mg-center {
+  margin: 0 auto; }
+
 body {
   box-sizing: border-box;
   font-size: 16px;
@@ -452,6 +455,17 @@ a {
 
 .tab-content {
   margin-top: 20px; }
+
+.flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+
+.flex-center {
+  align-items: center;
+  justify-content: center; }
 
 .grid-container {
   display: grid;
@@ -1402,6 +1416,17 @@ a > .fa-twitter:hover {
 
 .red {
   color: #f09292; }
+
+.report .bigbox {
+  color: #fff; }
+.report .col-md-3:nth-child(1) .bigbox {
+  background-color: #acca48 !important; }
+.report .col-md-3:nth-child(2) .bigbox {
+  background-color: #304179 !important; }
+.report .col-md-3:nth-child(3) .bigbox {
+  background-color: #f09292 !important; }
+.report .col-md-3:nth-child(4) .bigbox {
+  background-color: #f0be1c !important; }
 
 .btn {
   border-radius: 0;
