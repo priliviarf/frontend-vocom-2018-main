@@ -38,6 +38,14 @@
 .tab-content {
 	margin-top: 20px;
 }
+// ----------------------- flex
+.flex {
+	@include flexbox();
+}
+.flex-center {
+	align-items: center;
+	justify-content: center;
+}
 // ----------------------- grid
 .grid-container {
 	display: grid;
@@ -675,7 +683,7 @@ ul#nav li a i {
 	width: 5px;
 }
 
-ul#nav li a:hover {
+ul#nav li a:hover,ul#nav li a.active {
 	color: #FEBA33;
 }
 
@@ -943,4 +951,11 @@ div h2.title-db{
 	transform: rotate(0deg) translateX(50%);
 }
 
-/*End of Detail Event*/
+/*End Detail Event*/
+
+/*Admin dashboard gallery*/
+
+.div-content-db {
+  padding-top: 15px; }
+
+/*End Admin dashboard gallery*/

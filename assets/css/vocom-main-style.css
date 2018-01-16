@@ -366,6 +366,9 @@
 .pd-r-30 {
   padding-right: 30px; }
 
+.mg-center {
+  margin: 0 auto; }
+
 body {
   box-sizing: border-box;
   font-size: 16px;
@@ -408,6 +411,15 @@ a {
 .navbar-dark .navbar-toggler, .navbar-toggler:focus, .navbar-toggler:hover {
   border-color: transparent; }
 
+.modal-content {
+  padding: 10px 20px; }
+
+.input-group-addon, .form-control {
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -o-border-radius: 0px; }
+
 #main-navbar {
   padding-top: 15px; }
   #main-navbar.navbar-scroll {
@@ -443,6 +455,17 @@ a {
 
 .tab-content {
   margin-top: 20px; }
+
+.flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+
+.flex-center {
+  align-items: center;
+  justify-content: center; }
 
 .grid-container {
   display: grid;
@@ -1006,7 +1029,7 @@ ul#nav li a span {
 ul#nav li a i {
   width: 5px; }
 
-ul#nav li a:hover {
+ul#nav li a:hover, ul#nav li a.active {
   color: #FEBA33; }
 
 #dashboard .container-fluid .row {
@@ -1269,7 +1292,12 @@ div h2.title-db {
   -moz-transform: rotate(0deg) translateX(50%);
   transform: rotate(0deg) translateX(50%); }
 
-/*End of Detail Event*/
+/*End Detail Event*/
+/*Admin dashboard gallery*/
+.div-content-db {
+  padding-top: 15px; }
+
+/*End Admin dashboard gallery*/
 html, body {
   font-family: 'Fira-Regular',sans-serif; }
 
@@ -1278,6 +1306,9 @@ html, body {
   line-height: 1.5em; }
   .link-bla-blu:hover {
     color: #304179; }
+
+button {
+  cursor: pointer; }
 
 #main-navbar {
   transition: all 0.5s ease-in-out;
@@ -1575,6 +1606,17 @@ a > .fa-twitter:hover {
 .red {
   color: #f09292; }
 
+.report .bigbox {
+  color: #fff; }
+.report .col-md-3:nth-child(1) .bigbox {
+  background-color: #acca48 !important; }
+.report .col-md-3:nth-child(2) .bigbox {
+  background-color: #304179 !important; }
+.report .col-md-3:nth-child(3) .bigbox {
+  background-color: #f09292 !important; }
+.report .col-md-3:nth-child(4) .bigbox {
+  background-color: #f0be1c !important; }
+
 .btn {
   border-radius: 0;
   -webkit-border-radius: 0;
@@ -1609,6 +1651,14 @@ a > .fa-twitter:hover {
   .btn-ye-full:active, .btn-ye-full:hover {
     background-color: #f0be1c;
     color: #fff; }
+
+.btn-ye-full-2 {
+  background-color: #f0be1c;
+  color: #fff;
+  opacity: 0.9; }
+  .btn-ye-full-2:active, .btn-ye-full-2:hover {
+    color: #fff;
+    opacity: 1; }
 
 #login .form-login .btn {
   width: 120px;
@@ -2297,7 +2347,14 @@ a > .fa-twitter:hover {
     font-size: 1.3em; }
 
   .small {
-    font-size: 70%; } }
+    font-size: 70%; }
+
+  table {
+    font-size: 90%;
+    line-height: 1.5em; }
+
+  .bigbox button {
+    font-size: 90%; } }
 @media screen and (min-height: 1024px) and (min-width: 768px) {
   .normal {
     font-size: 0.9em; }

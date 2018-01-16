@@ -9,6 +9,9 @@ html,body {
 		color: $blue;
 	}
 }
+button {
+	cursor: pointer;
+}
 // ------------------------ navbar
 #main-navbar {
 	@include transition(0.5);
@@ -355,4 +358,30 @@ a>.fa-twitter:hover {
 }
 .red {
 	color: $red;
+}
+// ----------------------------- dashboard
+.report {
+	.bigbox {
+		color: $white;
+	}
+	.col-md-3:nth-child(1) {
+		.bigbox {
+			background-color: $green !important;
+		}
+	}
+	.col-md-3:nth-child(2) {
+		.bigbox {
+			background-color: $blue !important;
+		}
+	}
+	.col-md-3:nth-child(3) {
+		.bigbox {
+			background-color: $red !important;
+		}
+	}
+	.col-md-3:nth-child(4) {
+		.bigbox {
+			background-color: $yellow !important;
+		}
+	}
 }

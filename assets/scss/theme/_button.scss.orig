@@ -59,6 +59,7 @@
   background-color: #EEBD22;
   height: 35px;
   color: #fff;}
+<<<<<<< HEAD
 
 .event-btn {
   background-color: #304179;
@@ -67,3 +68,5 @@
   margin-left: 0px;
   float: left;
 }
+=======
+>>>>>>> 1bb6fce5596270f5b4d56cd051ef8bf1c0534c87
