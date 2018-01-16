@@ -38,7 +38,7 @@
 
     </div>
 
-  <div class="container-fluid text-center margin-zero">
+  <div class="container-fluid margin-zero">
     <div class="row content">
 
       <!--mulai sidenav bar-->
@@ -51,7 +51,7 @@
 
         <ul id="nav" class="text-left">
           <li>
-            <a href="./dashboard.html" class="active col-sm-12">
+            <a href="./dashboard.html" class="col-sm-12">
               <i class="fa fa-desktop"></i>
               <span>Dashboard</span>
             </a>
@@ -75,8 +75,8 @@
             </a>
           </li>
           <li>
-            <a href="gallery.html" class="col-sm-12">
-              <i class="fa fa-hourglass-half"></i>
+            <a href="gallery.html" class="active col-sm-12">
+              <i class="fa fa-camera"></i>
               <span>Gallery</span>
             </a>
           </li>          
@@ -98,48 +98,53 @@
 
       <!--mulai content section-->
       <div class="col-lg-10 col-md-9 col-sm-12 box-db">
-        <div class="container-fluid px-3">       
+        <div class="container-fluid px-3">   
+        <!--Gallery Content-->    
           <div class="div-content-db">
-            <a href="#" data-toggle="modal" data-target="#addPhotoModal" class="btn btn-default btn-sm">Upload Image</a>
+            <a href="#" data-toggle="modal" data-target="#addPhotoModal" class="btn btn-admin-gl mg-b-15">
+              Upload Image
+            </a>
             <br>
+
           <form method="" action="">
-            <p class="mg-bt-10"> All (0) | <a href="">Published</a> (1) | <a href="">Unpublish</a> (3)</p>
+            <p class="mg-bt-10 stat-gallery"> All (0) | <a href="">Published</a> (1) | <a href="">Unpublish</a> (3)</p>
             <!-- GALLERY LIST -->
             <div class="panel panel-default">
-                          <div class="panel-heading">
-                              List
-                          </div>
-                          <div class="panel-body">
-                              <div class="table-responsive">
-                                <div class="row nomag">
-                                  <div class="col-md-6 nopad">
-                                    Selected (0) | 
-                      <a href="" data-toggle="modal" data-target="#delete"><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-trash-o" data-original-title="Delete"></i> Delete Selected</a> | 
-                      <a href=""><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-globe" data-original-title="Publish"></i> Publish Selected</a> | 
-                      <a href=""><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-minus-circle" data-original-title="Unpublish"></i> Unpublish Selected</a>
-                                  </div>
-                                  <div class="col-md-6 nopad text-right">
-                                    <label>
-                                      <input id="input-search" name="" class="form-control input-sm" type="text">
-                                    </label>
-                                    <label>
-                                      <input value="Search" name="" class="btn btn-sm btn-info" type="submit">
-                                    </label>
-                                  </div>
-                                </div>
-                                <div class="mg-bt-15">
-                                  <div class="row nomag">
-                                    <!--Section1-->
-                                      <section class="col-md-3 pd-t-10">
+                <div class="panel-heading">
+                  List
+                </div>
+                <div class="panel-body">
+                  <div class="table-responsive">
+                    <div class="row nomag">
+                      <div class="col-md-8">
+                        Selected (0) | <a href="" data-toggle="modal" data-target="#delete"><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-trash-o" data-original-title="Delete"></i><span>Delete Selected</span></a> | <a href=""><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-globe" data-original-title="Publish"></i> Publish Selected</a> | <a href=""><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-minus-circle" data-original-title="Unpublish"></i> Unpublish Selected</a>
+                      </div>
+                      <div class="col-md-4 nopad text-right">
+                        <label>
+                          <input id="input-search" name="" class="form-control input-sm" type="text">
+                        </label>
+                        <label>
+                          <input value="Search" name="" class="btn btn-ye-full-3 input-sm" type="submit">
+                        </label>
+                      </div>
+                    </div>
+                  <div class="mg-bt-15">
+                    <div class="row nomag">
+
+                      <!--Section1-->
+                      <section class="col-md-3 pd-t-10">
                         <div class="list-photo">
-                          <a href="../assets/img/gallery-img.jpg" data-rel="lightcase">
-                            <img src="../assets/img/gallery-img.jpg" alt="Gallery" class="cover-img">
+                          <a href="../assets/img/logo-coming.png" data-rel="lightcase">
+                            <img src="../assets/img/logo-coming.png" alt="Gallery" class="cover-img">
                           </a>
-                          <div class="row nomag pd-t-10">
-                            <span class="col-md-2">
-                              <label><input name="" value="1" type="checkbox"></label>
-                            </span>
-                            <span class="col-md-10 text-right">
+                          <div class="col-md-12 mg-t-10 text-center">
+                            <label for="">Tittle here</label>
+                          </div>
+                          <div class="col-md-12 mg-b-10">
+                            <label class="mg-t-5">
+                              <input name="" value="1" type="checkbox">
+                            </label>
+                            <span class="float-right">
                               <a href=""><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-minus-circle" data-original-title="Unpublish"></i></a> 
                               <a href="" data-toggle="modal" data-target="#delete"><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-trash-o" data-original-title="Delete"></i></a> 
                               <a href="" data-toggle="modal" data-target="#detailImage"><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-search-plus" data-original-title="Detail"></i></a> 
@@ -148,70 +153,135 @@
                           <span></span>
                         </div>  
                       </section>
-                      <!--/section1-->
-                                      <section class="col-md-3 pd-t-10">
-                                        <div class="list-photo">
-                          <a href="../assets/img/gallery-img.jpg" data-rel="lightcase">
-                            <img src="../assets/img/gallery-img.jpg" alt="Gallery" class="cover-img">
+                      <!--/section-->
+
+                      <!--Section-->
+                      <section class="col-md-3 pd-t-10">
+                        <div class="list-photo">
+                          <a href="../assets/img/logo-coming.png" data-rel="lightcase">
+                            <img src="../assets/img/logo-coming.png" alt="Gallery" class="cover-img">
                           </a>
-                          <div class="row nomag pd-t-10">
-                            <span class="col-md-2">
-                              <label><input name="" value="1" type="checkbox"></label>
-                            </span>
-                            <span class="col-md-10 text-right">
-                              <a href=""><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-globe" data-original-title="Publish"></i></a>
-                              <a href="" data-toggle="modal" data-target="#delete"><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-trash-o" data-original-title="Delete"></i></a> 
-                              <a href="" data-toggle="modal" data-target="#detailImage"><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-search-plus" data-original-title="Detail"></i></a> 
+                          <div class="col-md-12 mg-t-10 text-center">
+                            <label for="">Tittle here</label>
+                          </div>
+                          <div class="col-md-12 mg-b-10">
+                            <label class="mg-t-5">
+                              <input name="" value="1" type="checkbox">
+                            </label>
+                            <span class="float-right">
+                              <a href=""><i class="fa fa-minus-circle"></i></a> 
+                              <a href=""><i class="fa fa-trash-o"></i></a> 
+                              <a href=""><i class="fa fa-search-plus"></i></a> 
                             </span>
                           </div>
                           <span></span>
-                        </div>
-                                      </section>
-                                      <section class="col-md-3 pd-t-10">
-                                        <div class="list-photo">
-                          <a href="../assets/img/gallery-img.jpg" data-rel="lightcase">
-                            <img src="../assets/img/gallery-img.jpg" alt="Gallery" class="cover-img">
+                        </div>  
+                      </section>
+                      <!--/section-->
+
+                      <section class="col-md-3 pd-t-10">
+                        <div class="list-photo">
+                          <a href="../assets/img/logo-coming.png" data-rel="lightcase">
+                            <img src="../assets/img/logo-coming.png" alt="Gallery" class="cover-img">
                           </a>
-                          <div class="row nomag pd-t-10">
-                            <span class="col-md-2">
-                              <label><input name="" value="1" type="checkbox"></label>
-                            </span>
-                            <span class="col-md-10 text-right">
-                              <a href=""><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-globe" data-original-title="Publish"></i></a>
-                              <a href="" data-toggle="modal" data-target="#delete"><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-trash-o" data-original-title="Delete"></i></a> 
-                              <a href="" data-toggle="modal" data-target="#detailImage"><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-search-plus" data-original-title="Detail"></i></a> 
+                          <div class="col-md-12 mg-t-10 text-center">
+                            <label for="">Tittle here</label>
+                          </div>
+                          <div class="col-md-12 mg-b-10">
+                            <label class="mg-t-5">
+                              <input name="" value="1" type="checkbox">
+                            </label>
+                            <span class="float-right">
+                              <a href=""><i class="fa fa-minus-circle"></i></a> 
+                              <a href=""><i class="fa fa-trash-o"></i></a> 
+                              <a href=""><i class="fa fa-search-plus"></i></a> 
                             </span>
                           </div>
                           <span></span>
-                        </div>
-                                      </section>
-                                      <section class="col-md-3 pd-t-10">
-                                        <div class="list-photo">
-                          <a href="../assets/img/gallery-img.jpg" data-rel="lightcase">
-                            <img src="../assets/img/gallery-img.jpg" alt="Gallery" class="cover-img">
+                        </div>  
+                      </section>
+                      <!--/section-->
+
+                      <section class="col-md-3 pd-t-10">
+                        <div class="list-photo">
+                          <a href="../assets/img/logo-coming.png" data-rel="lightcase">
+                            <img src="../assets/img/logo-coming.png" alt="Gallery" class="cover-img">
                           </a>
-                          <div class="row nomag pd-t-10">
-                            <span class="col-md-2">
-                              <label><input name="" value="1" type="checkbox"></label>
-                            </span>
-                            <span class="col-md-10 text-right">
-                              <a href=""><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-globe" data-original-title="Publish"></i></a>
-                              <a href="" data-toggle="modal" data-target="#delete"><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-trash-o" data-original-title="Delete"></i></a> 
-                              <a href="" data-toggle="modal" data-target="#detailImage"><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-search-plus" data-original-title="Detail"></i></a> 
+                          <div class="col-md-12 mg-t-10 text-center">
+                            <label for="">Tittle here</label>
+                          </div>
+                          <div class="col-md-12 mg-b-10">
+                            <label class="mg-t-5">
+                              <input name="" value="1" type="checkbox">
+                            </label>
+                            <span class="float-right">
+                              <a href=""><i class="fa fa-minus-circle"></i></a> 
+                              <a href=""><i class="fa fa-trash-o"></i></a> 
+                              <a href=""><i class="fa fa-search-plus"></i></a> 
                             </span>
                           </div>
                           <span></span>
-                        </div>
-                                      </section>
-                                    </div>
-                                </div>
-                                  <div class="row nomag">
-                                  <div class="col-md-6 nopad">
-                                    <span>Showing 1 to 4 from 4 entries</span>
-                                  </div>
-                                  <div class="col-md-6 nopad text-right">
-                                    <ul class="pagination nomag">
-                                      <li class="disabled"><a href="#">Prev</a></li>
+                        </div>  
+                      </section>
+                      <!--/section-->
+
+                      <section class="col-md-3 pd-t-10">
+                        <div class="list-photo">
+                          <a href="../assets/img/logo-coming.png" data-rel="lightcase">
+                            <img src="../assets/img/logo-coming.png" alt="Gallery" class="cover-img">
+                          </a>
+                          <div class="col-md-12 mg-t-10 text-center">
+                            <label for="">Tittle here</label>
+                          </div>
+                          <div class="col-md-12 mg-b-10">
+                            <label class="mg-t-5">
+                              <input name="" value="1" type="checkbox">
+                            </label>
+                            <span class="float-right">
+                              <a href=""><i class="fa fa-minus-circle"></i></a> 
+                              <a href=""><i class="fa fa-trash-o"></i></a> 
+                              <a href=""><i class="fa fa-search-plus"></i></a> 
+                            </span>
+                          </div>
+                          <span></span>
+                        </div>  
+                      </section>
+                      <!--/section-->
+
+                      <section class="col-md-3 pd-t-10">
+                        <div class="list-photo">
+                          <a href="../assets/img/logo-coming.png" data-rel="lightcase">
+                            <img src="../assets/img/logo-coming.png" alt="Gallery" class="cover-img">
+                          </a>
+                          <div class="col-md-12 mg-t-10 text-center">
+                            <label for="">Tittle here</label>
+                          </div>
+                          <div class="col-md-12 mg-b-10">
+                            <label class="mg-t-5">
+                              <input name="" value="1" type="checkbox">
+                            </label>
+                            <span class="float-right">
+                              <a href=""><i class="fa fa-minus-circle"></i></a> 
+                              <a href=""><i class="fa fa-trash-o"></i></a> 
+                              <a href=""><i class="fa fa-search-plus"></i></a> 
+                            </span>
+                          </div>
+                          <span></span>
+                        </div>  
+                      </section>
+                      <!--/section-->
+
+                    </div>
+                  </div>
+
+                  <!--pagination-->
+                  <div class="row nomag">
+                    <div class="col-md-6 nopad">
+                      <span>Showing 1 to 4 from 4 entries</span>
+                    </div>
+                    <div class="col-md-6 nopad">
+                      <ul class="pagination nomag float-right">
+                        <li class="disabled"><a href="#">Prev</a></li>
                         <li><a href="#">1</a></li>
                         <li><a href="#">2</a></li>
                         <li><a href="#">3</a></li>
@@ -219,11 +289,12 @@
                         <li><a href="#">5</a></li>
                         <li><a href="#">Next</a></li>
                       </ul>
-                                  </div>
-                                </div>
-                              </div>
-                          </div>
-                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
                       <!-- /GALLERY LIST -->
                   </form>
           </div>
@@ -235,56 +306,7 @@
   </div>
 </div>
 <script type="text/javascript" src="../assets/js/jquery.min.js"></script>
-<script type="text/javascript" src="../assets/vendor/chartjs/chart.js"></script>
-<!-- <script type="text/javascript" src="../assets/vendor/nicescroll/jquery.nicescroll.min.js"></script> -->
 <script type="text/javascript" src="../assets/js/main-for-dashboard.js"></script>
-<script>
-var ctx = document.getElementById("chartPendaftar").getContext('2d');
-var myChart = new Chart(ctx, {
-    type: 'bar',
-    data: {
-        labels: ["Februari", "Maret", "April"],
-        datasets: [
-            {
-              label: "WDC",
-              backgroundColor: "#acca48",
-              data: [12,24,50]
-            }, {
-              label: "MADC",
-              backgroundColor: "#304179",
-              data: [17,23,14]
-            }, {
-              label: "ICPC",
-              backgroundColor: "#f09292",
-              data: [20,15,25]
-            }, {
-              label: "SemNas",
-              backgroundColor: "#f0be1c",
-              data: [40,31,29]
-            }
-        ]
-    },
-    options: {
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero:true
-                }
-            }]
-        },
-        legend: {
-            display: true,
-            labels: {
-                fontColor: 'rgb(255, 99, 132)'
-            }
-        },
-        title: {
-            display: true,
-            fontSize: 16,
-            text: 'Statistik Pendaftar'
-        }
-    }
-});
 </script>
 </body>
 </html>

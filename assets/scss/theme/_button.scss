@@ -39,6 +39,20 @@
     opacity: 1;
   }
 }
+.btn-ye-full-3 {
+  height: 30px;
+  margin-top: -3px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  background-color:  $yellow;
+  color: $white;
+  opacity: 0.9;
+  &:active,&:hover {
+    color: $white;
+    opacity: 1;
+  }
+}
+
 #login .form-login .btn{
   width: 120px;
   height: 40px;
@@ -66,4 +80,13 @@
   border: 2px solid #304179;
   margin-left: 0px;
   float: left;
+}
+.btn-admin-gl {
+  background-color: #36373B;
+  border: transparent;
+  color: $white;
+  &:active,&:hover {
+    background-color:  #000;
+    color: $white;
+  }
 }
