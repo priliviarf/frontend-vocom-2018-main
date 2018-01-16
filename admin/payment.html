@@ -16,12 +16,32 @@
   <link rel="stylesheet" type="text/css" href="../assets/vendor/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/normalize.css">
   <link rel="stylesheet" type="text/css" href="../assets/vendor/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="../assets/vendor/slick/slick.css">
-  <link rel="stylesheet" type="text/css" href="../assets/vendor/slick/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="../assets/vendor/lightcase/lightcase.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/vocom-main-style.css">
 
 </head>
 <body>
+  <!-- modal -->
+  <div class="modal fade" id="delete-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Hapus Data</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <p>Anda yakin ingin <strong>menghapus</strong> data?</p>
+            <button type="button" class="btn btn-danger" name="button"> <i class="fa fa-check"></i> Ya</button>
+            <button type="button" class="btn btn-secondary" name="button" data-dismiss="modal"> <i class="fa fa-times"></i> Batal</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /modal -->
 
 <div id="dashboard">
     <!--Header-->
@@ -57,15 +77,15 @@
             </a>
           </li>
           <li>
-            <a href="#" class="col-sm-12">
+            <a href="./teams.html" class="col-sm-12">
               <i class="fa fa-users"></i>
-              <span>Team Members</span>
+              <span>Teams</span>
             </a>
           </li>
           <li>
-            <a href="#" class="col-sm-12">
-              <i class="fa fa-microphone"></i>
-              <span>Event</span>
+            <a href="./gallery.html" class="col-sm-12">
+              <i class="fa fa-camera"></i>
+              <span>Gallery</span>
             </a>
           </li>
           <li>
@@ -141,9 +161,9 @@
                             </figure>
                           </td>
                           <td class="py-1">
-                            <a href="../assets/img/wallpaper2.jpg" data-rel="lightcase" class="btn btn-sm btn-primary"><i class="fa fa-eye"></i></a>
-                            <button type="button" class="btn btn-sm btn-success" name="button"><i class="fa fa-check"></i></button>
-                            <button type="button" class="btn btn-sm btn-danger" name="button"><i class="fa fa-trash"></i></button>
+                            <a href="#" class="btn-sm btn-success"><i class="fa fa-check"></i></a>
+                            <a href="../assets/img/wallpaper2.jpg" data-rel="lightcase" class="btn-primary btn-sm"><i class="fa fa-eye"></i></a>
+                            <a href="" data-toggle="modal" data-target="#delete-modal" class="btn-danger btn-sm"><i class="fa fa-trash"></i></a>
                           </td>
                         </tr>
                         <tr>
@@ -156,9 +176,9 @@
                             </figure>
                           </td>
                           <td class="py-1">
-                            <a href="../assets/img/wallpaper2.jpg" data-rel="lightcase" class="btn btn-sm btn-primary"><i class="fa fa-eye"></i></a>
-                            <button type="button" class="btn btn-sm btn-success" name="button"><i class="fa fa-check"></i></button>
-                            <button type="button" class="btn btn-sm btn-danger" name="button"><i class="fa fa-trash"></i></button>
+                            <a href="#" class="btn-sm btn-success"><i class="fa fa-check"></i></a>
+                            <a href="../assets/img/wallpaper2.jpg" data-rel="lightcase" class="btn-primary btn-sm"><i class="fa fa-eye"></i></a>
+                            <a href="" data-toggle="modal" data-target="#delete-modal" class="btn-danger btn-sm"><i class="fa fa-trash"></i></a>
                           </td>
                         </tr>
                         <tr>
@@ -171,9 +191,9 @@
                             </figure>
                           </td>
                           <td class="py-1">
-                            <a href="../assets/img/wallpaper2.jpg" data-rel="lightcase" class="btn btn-sm btn-primary"><i class="fa fa-eye"></i></a>
-                            <button type="button" class="btn btn-sm btn-success" name="button"><i class="fa fa-check"></i></button>
-                            <button type="button" class="btn btn-sm btn-danger" name="button"><i class="fa fa-trash"></i></button>
+                            <a href="#" class="btn-sm btn-success"><i class="fa fa-check"></i></a>
+                            <a href="../assets/img/wallpaper2.jpg" data-rel="lightcase" class="btn-primary btn-sm"><i class="fa fa-eye"></i></a>
+                            <a href="" data-toggle="modal" data-target="#delete-modal" class="btn-danger btn-sm"><i class="fa fa-trash"></i></a>
                           </td>
                         </tr>
                       </tbody>
@@ -213,6 +233,8 @@
   </div>
 </div>
 <script type="text/javascript" src="../assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="../assets/js/popper.js"></script>
+<script type="text/javascript" src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
 <script type="text/javascript" src="../assets/vendor/chartjs/chart.js"></script>
 <script type="text/javascript" src="../assets/vendor/lightcase/lightcase.js"></script>
 <!-- <script type="text/javascript" src="../assets/vendor/nicescroll/jquery.nicescroll.min.js"></script> -->
