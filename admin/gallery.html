@@ -8,7 +8,7 @@
   <meta name="author" content="Vocomfest Technical Support Team">
   <meta name="robots" content="index,follow">
 
-  <title>Admin Dashboard</title>
+  <title>Admin Dashboard | Gallery</title>
 
   <link rel="shortcut icon" type="x-icon" href="../assets/img/icon.png">
 
@@ -16,15 +16,11 @@
   <link rel="stylesheet" type="text/css" href="../assets/vendor/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/normalize.css">
   <link rel="stylesheet" type="text/css" href="../assets/vendor/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="../assets/vendor/slick/slick.css">
-  <link rel="stylesheet" type="text/css" href="../assets/vendor/slick/slick-theme.css">
-   <link rel="stylesheet" type="text/css" href="../assets/vendor/lightcase/lightcase.css">
+  <link rel="stylesheet" type="text/css" href="../assets/vendor/lightcase/lightcase.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/vocom-main-style.css">
 
 </head>
 <body>
-
-<div id="dashboard">
   <!-- Modal -->
   <div class="modal fade" id="upload-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -55,7 +51,29 @@
     </div>
   </div>
   <!-- /Modal -->
+  <!-- modal -->
+  <div class="modal fade" id="delete-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Hapus Data</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <p>Anda yakin ingin <strong>menghapus</strong> data?</p>
+            <button type="button" class="btn btn-danger" name="button"> <i class="fa fa-check"></i> Ya</button>
+            <button type="button" class="btn btn-secondary" name="button" data-dismiss="modal"> <i class="fa fa-times"></i> Batal</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /modal -->
 
+<div id="dashboard">
     <!--Header-->
     <div id="header">
       <nav class="navbar navbar-expand-lg px-4 navbar-dark">
@@ -127,11 +145,13 @@
         <div class="container-fluid px-3">
         <!--Gallery Content-->
           <div class="div-content-db">
-            <button type="button" class="btn btn-admin-gl mg-b-15" data-toggle="modal" data-target="#upload-modal"><i class="fa fa-upload mg-r-10"></i>Upload Image</button>
+            <a href="#" data-toggle="modal" data-target="#upload-modal" class="btn btn-admin-gl mg-b-15">
+              Upload Image
+            </a>
             <br>
 
           <form method="" action="">
-            <p class="mg-bt-10 stat-gallery"> All (0) | <a href="">Published</a> (1) | <a href="">Unpublish</a> (3)</p>
+            <p class="mg-bt-10 stat-gallery small"> All (0) | <a href="">Published</a> (1) | <a href="">Unpublish</a> (3)</p>
             <!-- GALLERY LIST -->
             <div class="panel panel-default">
                 <div class="panel-heading">
@@ -140,7 +160,7 @@
                 <div class="panel-body">
                   <div class="table-responsive">
                     <div class="row nomag">
-                      <div class="col-md-8">
+                      <div class="col-md-8 small">
                         Selected (0) | <a href="" data-toggle="modal" data-target="#delete"><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-trash-o" data-original-title="Delete"></i><span> Delete Selected</span></a> | <a href=""><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-globe" data-original-title="Publish"></i> Publish Selected</a> | <a href=""><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-minus-circle" data-original-title="Unpublish"></i> Unpublish Selected</a>
                       </div>
                       <div class="col-md-4 nopad text-right">
@@ -170,7 +190,7 @@
                             </label>
                             <span class="float-right">
                               <a href=""><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-minus-circle" data-original-title="Unpublish"></i></a>
-                              <a href="" data-toggle="modal" data-target="#delete"><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-trash-o" data-original-title="Delete"></i></a>
+                              <a href="" data-toggle="modal" data-target="#delete-modal"><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-trash-o" data-original-title="Delete"></i></a>
                               <a href="../assets/img/logo-coming.png" data-rel="lightcase"><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-search-plus" data-original-title="Detail"></i></a>
                             </span>
                           </div>
@@ -194,7 +214,7 @@
                             </label>
                             <span class="float-right">
                               <a href=""><i class="fa fa-minus-circle"></i></a>
-                              <a href=""><i class="fa fa-trash-o"></i></a>
+                              <a href="" data-toggle="modal" data-target="#delete-modal"><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-trash-o" data-original-title="Delete"></i></a>
                               <a href="../assets/img/logo-coming.png" data-rel="lightcase"><i class="fa fa-search-plus"></i></a>
                             </span>
                           </div>
@@ -217,8 +237,8 @@
                             </label>
                             <span class="float-right">
                               <a href=""><i class="fa fa-minus-circle"></i></a>
-                              <a href=""><i class="fa fa-trash-o"></i></a>
-                              <a href="../assets/img/logo-coming.png" data-rel="lightcase"><i class="fa fa-search-plus"></i></a>
+                              <a href="" data-toggle="modal" data-target="#delete-modal"><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-trash-o" data-original-title="Delete"></i></a>
+                              <a href=""><i class="fa fa-search-plus"></i></a>
                             </span>
                           </div>
                           <span></span>
@@ -240,8 +260,8 @@
                             </label>
                             <span class="float-right">
                               <a href=""><i class="fa fa-minus-circle"></i></a>
-                              <a href=""><i class="fa fa-trash-o"></i></a>
-                              <a href="../assets/img/logo-coming.png" data-rel="lightcase"><i class="fa fa-search-plus"></i></a>
+                              <a href="" data-toggle="modal" data-target="#delete-modal"><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-trash-o" data-original-title="Delete"></i></a>
+                              <a href=""><i class="fa fa-search-plus"></i></a>
                             </span>
                           </div>
                           <span></span>
@@ -263,8 +283,8 @@
                             </label>
                             <span class="float-right">
                               <a href=""><i class="fa fa-minus-circle"></i></a>
-                              <a href=""><i class="fa fa-trash-o"></i></a>
-                              <a href="../assets/img/logo-coming.png" data-rel="lightcase"><i class="fa fa-search-plus"></i></a>
+                              <a href="" data-toggle="modal" data-target="#delete-modal"><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-trash-o" data-original-title="Delete"></i></a>
+                              <a href=""><i class="fa fa-search-plus"></i></a>
                             </span>
                           </div>
                           <span></span>
@@ -286,8 +306,8 @@
                             </label>
                             <span class="float-right">
                               <a href=""><i class="fa fa-minus-circle"></i></a>
-                              <a href=""><i class="fa fa-trash-o"></i></a>
-                              <a href="../assets/img/logo-coming.png" data-rel="lightcase"><i class="fa fa-search-plus"></i></a>
+                              <a href="" data-toggle="modal" data-target="#delete-modal"><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-trash-o" data-original-title="Delete"></i></a>
+                              <a href=""><i class="fa fa-search-plus"></i></a>
                             </span>
                           </div>
                           <span></span>
@@ -329,12 +349,11 @@
     </div>
   </div>
 </div>
- <!-- JAVASCRIPT HERE  -->
-  <script type="text/javascript" src="../assets/js/jquery.min.js"></script>
-  <script type="text/javascript" src="../assets/js/popper.js"></script>
-  <script type="text/javascript" src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
-  <script type="text/javascript" src="../assets/vendor/slick/slick.min.js"></script>
-  <script type="text/javascript" src="../assets/vendor/lightcase/lightcase.js"></script>
-  <script type="text/javascript" src="../assets/js/main.js"></script>
+<script type="text/javascript" src="../assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="../assets/js/popper.js"></script>
+<script type="text/javascript" src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="../assets/vendor/lightcase/lightcase.js"></script>
+<script type="text/javascript" src="../assets/js/main-for-dashboard.js"></script>
+</script>
 </body>
 </html>

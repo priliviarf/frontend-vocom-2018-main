@@ -382,6 +382,12 @@ ul {
 li {
   list-style-type: none; }
 
+ul.circle > li {
+  list-style-type: circle; }
+
+ol.decimal > li {
+  list-style-type: decimal; }
+
 figure {
   margin: 0;
   position: relative; }
@@ -419,6 +425,12 @@ a {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   -o-border-radius: 0px; }
+
+.form-inline {
+  justify-content: flex-end; }
+
+.table td, .table th {
+  vertical-align: middle; }
 
 #main-navbar {
   padding-top: 15px; }
@@ -499,6 +511,9 @@ a {
   position: relative; }
   #gallery .figcaption i {
     position: absolute; }
+
+.w-200 {
+  width: 200px; }
 
 .link-bottom {
   padding: 40px 20px 0; }
@@ -1114,7 +1129,7 @@ div h2.title-db {
   background-color: #304179; }
 
 #event-detail {
-  max-height: 88vh;
+  max-height: 100vh;
   background-attachment: fixed;
   background-color: #F0BE1C;
   background-image: url("../img/travel.png");
@@ -1170,6 +1185,15 @@ div h2.title-db {
   align-items: center;
   width: 60%; }
 
+#event-detail .right .col-md-12 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 #event-detail .right img {
   width: 300px;
   margin: 20px 0px 0px 100px; }
@@ -1196,6 +1220,9 @@ div h2.title-db {
   padding-left: 0px; }
 
 .event-mg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-left: 60px; }
 
 .nav-event {
@@ -1209,18 +1236,21 @@ div h2.title-db {
   padding-left: 10px;
   border-left: 2px solid #304179; }
 
+.event-container #one, .event-container #two, .event-container #three, .event-container #four, .event-container #five, .event-container #six {
+  padding-top: 76px; }
+
 #one h3.event-bold, #two h3.event-bold, #three h3.event-bold, #four h3.event-bold, #five h3.event-bold, #six h3.event-bold {
   font-size: 2em;
-  color: #304179;
   font-weight: 600px; }
 
 #one hr, #two hr, #three hr, #four hr, #five hr, #six hr {
   display: block;
   height: 2px;
   border: 0;
-  border-top: 2px solid #F0BE1C;
-  margin: 1em 0;
-  padding: 0; }
+  border-top: 2px solid #000;
+  margin: 1em auto;
+  padding: 0;
+  width: 60px; }
 
 .link-effect a {
   position: relative;
@@ -1542,6 +1572,11 @@ button {
   color: gray;
   font-size: 0.7em; }
 
+.event-container h3 {
+  color: #f0be1c;
+  font-family: 'Fira-Black', sans-serif;
+  text-transform: lowercase; }
+
 #events .col-item {
   cursor: pointer; }
   #events .col-item h3 {
@@ -1732,6 +1767,7 @@ a > .fa-twitter:hover {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
+  border: none;
   padding: .5rem 1.4rem; }
 
 .btn-blue {
@@ -1986,12 +2022,12 @@ a > .fa-twitter:hover {
     margin-left: 30%; }
 
   .event-hide-one {
-    margin-top: 5px;
+    margin-top: 80px;
     width: 200px;
     display: block; }
 
   .event-hide-one img {
-    width: 250px; }
+    width: 200px; }
 
   /*Selesai Detail Event*/ }
 @media screen and (max-width: 480px) {
@@ -2153,7 +2189,7 @@ a > .fa-twitter:hover {
 
   .event-hide-one img {
     margin-left: 50px;
-    width: 250px; }
+    width: 170px; }
 
   .left p {
     font-size: 1.2em; }

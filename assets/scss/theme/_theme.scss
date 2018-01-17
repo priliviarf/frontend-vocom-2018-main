@@ -161,6 +161,13 @@ button {
 		font-size: 0.7em;
 	}
 }
+.event-container {
+	h3 {
+		color: $yellow;
+		font-family: 'Fira-Black', sans-serif;
+		text-transform: lowercase;
+	}
+}
 #events {
 	.col-item {
 		cursor: pointer;

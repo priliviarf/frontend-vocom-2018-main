@@ -66,6 +66,12 @@ ul {
 li {
   list-style-type: none;
 }
+ul.circle>li {
+	list-style-type: circle;
+}
+ol.decimal>li {
+	list-style-type: decimal;
+}
 figure {
 	margin: 0;
 	position: relative;
@@ -98,4 +104,10 @@ a {
 }
 .input-group-addon,.form-control {
 	@include radius(0px);
+}
+.form-inline {
+	justify-content: flex-end;
+}
+.table td, .table th {
+	vertical-align: middle;
 }

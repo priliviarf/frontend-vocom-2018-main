@@ -82,6 +82,9 @@
 		}
 	}
 }
+.w-200 {
+	width: 200px;
+}
 // ----------------------- button
 .link-bottom {
 	padding: 40px 20px 0 ;
@@ -772,7 +775,7 @@ div h2.title-db{
 	background-color: #304179;
 }
 #event-detail {
-	max-height: 88vh;
+	max-height: 100vh;
   background-attachment: fixed;
   background-color: #F0BE1C;
   background-image: url("../img/travel.png");
@@ -820,6 +823,11 @@ div h2.title-db{
   #event-detail .right {
     align-items: center;
     width: 60%; }
+		#event-detail .right .col-md-12 {
+			@include flexbox();
+			align-items: center;
+		  justify-content: center;
+		}
     #event-detail .right img {
       width: 300px;
       margin: 20px 0px 0px 100px;}
@@ -845,6 +853,9 @@ div h2.title-db{
 	padding-left: 0px;
 }
 .event-mg {
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
 	margin-left: 60px;
 }
 .nav-event {
@@ -858,9 +869,13 @@ div h2.title-db{
 	padding-left: 10px;
 	border-left: 2px solid #304179;
 }
+.event-container {
+	#one,#two,#three,#four,#five,#six {
+		padding-top: 76px;
+	}
+}
 #one h3.event-bold,#two h3.event-bold,#three h3.event-bold, #four h3.event-bold,#five h3.event-bold,#six h3.event-bold {
 	font-size: 2em;
-	color: #304179;
 	font-weight: 600px;
 }
 
@@ -868,12 +883,13 @@ div h2.title-db{
     display: block;
     height: 2px;
     border: 0;
-    border-top: 2px solid #F0BE1C;
-    margin: 1em 0;
-    padding: 0; 
+    border-top: 2px solid $black;
+    margin: 1em auto;
+    padding: 0;
+		width: 60px;
 }
 
-//link effect 
+//link effect
 .link-effect a {
     position: relative;
     display: inline-block;

@@ -25,7 +25,7 @@
 </head>
 <body>
   <!-- NAVBAR -->
-  <nav id="main-navbar" class="navbar navbar-expand-lg px-4 navbar-dark event-top">
+  <nav id="main-navbar" class="navbar fixed-top navbar-expand-lg px-4 navbar-dark">
     <a class="navbar-brand" href="./index.html">
       <img src="./assets/img/icon.png" alt="">
       <span>Vocomfest</span>
@@ -36,10 +36,10 @@
 
     <div class="collapse navbar-collapse" id="navbar">
       <ul class="navbar-nav small mt-2 mt-lg-0">
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="#hero-section">Home <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="#events">Event</a>
         </li>
         <li class="nav-item">
@@ -61,7 +61,7 @@
           <a class="nav-link" href="#">Register</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Login</a>
+          <a class="nav-link" href="login.html">Login</a>
         </li>
       </ul>
     </div>
@@ -75,27 +75,29 @@
       </div>
       <!--left head-->
       <div class="left">
-      <div class="col-md-12 text-center event-mg"><h1 class="text-left"><span class="fr-bla big">Seminar </span><br> Nasional</h1>
+      <div class="col-md-12 text-center event-mg"><h1 class="text-left wh"><span class="fr-bla big">Seminar </span><br> Nasional</h1>
         <p class="text-left">Seminar Nasional merupakan acara puncak VOCOMFEST 2018. Acara ini terbuka untuk umum dan diharapkan dapat memberikan pengetahuan untuk masyarakat Indonesia tentang pentingnya perkembangan dunia IT.</p>
-        <a href="register.html" class="btn event-btn">
-          <span>REGISTER</span>
-        </a>
-      </div>  
+        <div>
+          <a href="register.html" class="btn event-btn">
+            <span>REGISTER</span>
+          </a>
+        </div>
+      </div>
     </div>
     <!--Right Head-->
     <div class="right col-lg-7 event-hide-two">
       <div class="col-md-12 text-center">
         <img src="./assets/img/semnas2.png" alt="">
-      </div>        
+      </div>
     </div>
     </div>
-    
+
   </section>
   <!-- /hero-section -->
 
-  <div class="container pd-bt-20 margin-zero text-center">
-    <div class="row pd-bt-20">
-    
+  <div class="event-container container pd-bt-20 margin-zero text-center">
+    <div class="row pd-bt-20 ml-0">
+
     <div class="col-md-12">
       <img src="assets/img/logo.png" alt="" class="event-logo">
     </div>
@@ -112,11 +114,11 @@
       </section>
     </div>
 
-      
+
       <div class="col-md-12 text-justify">
       <!-- One -->
       <div id="one" class="">
-        <h3 class="mont-bold text-center event-bold">Deskripsi</h3>
+        <h3 class="mont-bold text-center event-bold">Deskripsi.</h3>
         <hr class="bl-line-sep">
           <!--gambar
           <div class="col-12 text-center">
@@ -132,7 +134,7 @@
 
         <h4>Tema</h4>
         <p>"Innovative Website to Educate Moral Citizen"</p>
-        
+
         <div class="row">
           <div class="col-sm-6">
             <h4>Hadiah</h4>
@@ -162,17 +164,17 @@
             </address>
           </div>
         </div>
-        
 
-        
+
+
       </div>
       <!-- /one -->
       <!-- two -->
       <div id="two" class="">
-        <h3 class="mont-bold text-center event-bold">Syarat dan Ketentuan</h3>
+        <h3 class="mont-bold text-center event-bold">Syarat dan Ketentuan.</h3>
         <hr class="bl-line-sep">
         <h4>Syarat Peserta</h4>
-          <ol>
+          <ol class="decimal">
             <li>Peserta Web Design Competition adalah satu tim yang terdiri dari maksimal 3 orang dari 1 sekolah yang sama.</li>
             <li>Peserta merupakan siswa SMA/SMK sederajat dan masih berstatus pelajar aktif.</li>
             <li>Setiap Sekolah diperbolehkan untuk mendaftarkan lebih dari satu tim.</li>
@@ -183,9 +185,11 @@
             <li>Peraturan yang belum tercantum akan ditambahkan kemudian hari bila diperlukan.</li>
           </ol>
         <h4>Ketentuan Web</h4>
-          <ol>
-            <li>Bentuk web yang dibuat merupakan sebuah web statis tetapi peserta diperkenankan untuk membuat dalam bentuk web dinamis selama seluruh syarat lainnya terpenuhi.
-              <ul>
+          <ol class="decimal">
+            <li>
+              <p>Bentuk web yang dibuat merupakan sebuah web statis tetapi peserta diperkenankan untuk membuat dalam bentuk web dinamis selama seluruh syarat lainnya terpenuhi.
+              </p>
+              <ul class="circle pd-l-20">
                 <li>
                   <h5>Web Statis</h5>
                   <p>Web statis adalah website yang mana pengguna tidak bisa mengubah konten dari web tersebut secara langsung menggunakan browser. Interaksi yang terjadi antara pengguna dan server hanyalah  seputar pemrosesan link saja. Halaman-halaman web tersebut tidak memiliki database, data dan informasi dalam web statis tidak berubah-ubah kecuali diubah syntaxnya.</p>
@@ -205,8 +209,8 @@
             <li>Panitia VOCOMFEST 2017 berhak mendiskualifikasi peserta jika diketahui Hak Atas Kekayaan Intelektualnya diragukan, sedang dalam sengketa, mengambil karya orang lain, atau mendapat klaim dari pihak lain.</li>
             <li>Website yang diperlombakan menjadi hak milik peserta.</li>
             <li>
-              Konten website
-              <ul>
+              <p>Konten website</p>
+              <ul class="circle pd-l-20">
                 <li>
                   <h5>Home</h5>
                   <p>Informasi umum website.</p>
@@ -234,11 +238,11 @@
             </li>
             <li>Ketentuan dan persyaratan yang belum tercantum akan ditambahkan kemudian hari bila diperlukan.</li>
           </ol>
-      </div>  
+      </div>
       <!-- /two -->
       <!-- three -->
       <div id="three" class=" pd-b-20">
-        <h3 class="mont-bold text-center event-bold">Pendaftaran</h3>
+        <h3 class="mont-bold text-center event-bold">Pendaftaran.</h3>
         <hr class="bl-line-sep">
         <h4>Biaya</h4>
           <p>Biaya Pendaftaran lomba adalah Rp. 75.000 / Tim</p>
@@ -249,7 +253,7 @@
         <h4>Syarat Pendaftaran</h4>
           <ul>
             <li>Menentukan nama tim, ketua tim, dan anggota tim</li>
-            <li>Mempersiapkan : 
+            <li>Mempersiapkan :
               <ol>
                 <li>Scan kartu pelajar semua anggota</li>
                 <li>Foto 3x4 semua anggota (background bebas)</li>
@@ -261,7 +265,7 @@
 
         <h4>Mekanisme Pendaftaran</h4>
           <h5>Online</h5>
-          <ol>
+          <ol class="decimal">
             <li>Peserta melakukan pendaftaran di <a href="http://www.vocomfest.com/register">www.vocomfest.com/register</a></li>
             <li>Peserta mengisi form registrasi yang tersedia dengan data yang sebenarnya-benarnya.</li>
             <li>Peserta melakukan pembayaran sebesar Rp, 75.000 di transfer ke nomor rekening : ( ________)</li>
@@ -272,7 +276,7 @@
           </ol>
 
           <h5>Offline</h5>
-          <ol>
+          <ol class="decimal">
             <li>Periode pendaftaran : 1 Februari – 15 Maret 2017</li>
             <li>Lokasi pendaftaran  : Sekretariat Himakomsi SV UGM, Gedung Sekolah Vokasi Sekip I.</li>
             <li>Waktu pendaftaran : Pukul 09.00 – 17.00 WIB setiap hari Senin – Sabtu.</li>
@@ -293,15 +297,15 @@
           <p>HP : 085700697207</p>
           <p>line : nithahuwaida</p>
         </address>
-      </div>  
+      </div>
       <!-- /three -->
       <div class="row">
         <!-- Four -->
       <div id="four" class="pd-b-20 col-sm-6">
-        <h3 class="mont-bold text-center event-bold">Pengumpulan Karya</h3>
+        <h3 class="mont-bold text-center event-bold">Pengumpulan Karya.</h3>
         <hr class="bl-line-sep">
         <p>
-          Hasil karya dikirimkan melalui website www.vocomfest.com dengan nama folder : 
+          Hasil karya dikirimkan melalui website www.vocomfest.com dengan nama folder :
           <br><span class="">WDC_nama tim_nama website</span>
           <br>Contoh : WDC_TimA_WebsiteX.
         </p>
@@ -310,11 +314,11 @@
             <li>Screenshoot website</li>
             <li>File website disimpan dalam satu folder dengan nama folder <strong>WDC_nama tim_nama website</strong>, kemudian dikompres dengan format zip.</li>
           </ul>
-      </div>  
+      </div>
       <!-- /Four -->
       <!-- Five -->
       <div id="five" class=" pd-b-20 col-sm-6">
-        <h3 class="mont-bold text-center event-bold">Kriteria Penilaian</h3>
+        <h3 class="mont-bold text-center event-bold">Kriteria Penilaian.</h3>
         <hr class="bl-line-sep">
         <ol class="text-center">
           <li>Fitur dan inovasi web</li>
@@ -325,13 +329,13 @@
           <li>Fungsionalitas</li>
           <li>Desain interface web,  layout dan navigasi</li>
         </ol>
-      </div>  
+      </div>
       <!-- /Five -->
       </div>
-      
+
       <!-- Six -->
       <div id="six" class="pd-b-20">
-        <h3 class="mont-bold text-center event-bold">Frequently Asked Questions</h3>
+        <h3 class="mont-bold text-center event-bold">Frequently Asked Questions.</h3>
         <hr class="bl-line-sep">
         <blockquote class="blockquote text-left">
           <p class="special">WDC itu apa?</p>
@@ -365,7 +369,7 @@
           <p class="special">WDC keren ya?</p>
           <p>Iya dong, mantap jiwa...</p>
         </blockquote>
-      </div>  
+      </div>
       <!-- /Six -->
       </div>
     </div>
@@ -379,7 +383,7 @@
     </ul>
     <p class="smaller wh text-center mb-0 mg-t-20">Made with <i class="fa fa-heart red" aria-hidden="true"></i> in <span>Yogyakarta</span><br> by <span>Vocomfest Technical Support</span></p>
   </footer>
-  
+
   <!-- JAVASCRIPT HERE  -->
   <script type="text/javascript" src="./assets/js/jquery.min.js"></script>
   <script type="text/javascript" src="./assets/js/popper.js"></script>
