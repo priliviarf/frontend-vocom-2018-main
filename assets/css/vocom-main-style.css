@@ -420,6 +420,12 @@ a {
   -moz-border-radius: 0px;
   -o-border-radius: 0px; }
 
+.form-inline {
+  justify-content: flex-end; }
+
+.table td, .table th {
+  vertical-align: middle; }
+
 #main-navbar {
   padding-top: 15px; }
   #main-navbar.navbar-scroll {
@@ -499,6 +505,9 @@ a {
   position: relative; }
   #gallery .figcaption i {
     position: absolute; }
+
+.w-200 {
+  width: 200px; }
 
 .link-bottom {
   padding: 40px 20px 0; }
@@ -1732,6 +1741,7 @@ a > .fa-twitter:hover {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
+  border: none;
   padding: .5rem 1.4rem; }
 
 .btn-blue {
