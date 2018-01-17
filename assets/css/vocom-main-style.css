@@ -1109,6 +1109,84 @@ div h2.title-db {
   margin-right: 30px; }
 
 /*End of dashboard*/
+#member-page .border {
+  border: none !important;
+  border-bottom: 1px solid #d8dcdc !important; }
+#member-page .member-sq {
+  border: 1px solid #d8dcdc;
+  border-radius: 5px; }
+  #member-page .member-sq .photo {
+    border-radius: 50%;
+    width: 100%;
+    margin: 15px 0; }
+  #member-page .member-sq p {
+    text-align: center;
+    margin: 0; }
+    #member-page .member-sq p span {
+      font-weight: bold; }
+  #member-page .member-sq .status {
+    color: #f0be1c; }
+  #member-page .member-sq .mg-bt-15 {
+    margin-bottom: 15px !important; }
+  #member-page .member-sq .no-border {
+    border: none !important; }
+  #member-page .member-sq .new-memb {
+    text-align: center;
+    font-size: 2em;
+    color: #fff; }
+#member-page .btn-circle {
+  border: none;
+  margin-top: 50px;
+  border-radius: 100% !important;
+  width: 70px;
+  height: 70px;
+  background-color: #f0be1c; }
+  #member-page .btn-circle:hover {
+    background-color: #f3cb5a; }
+
+.mg-t-0 {
+  margin-top: 0; }
+
+#add-news .title-event-db, #edit-news .title-event-db, #news-list .title-event-db {
+  text-align: left;
+  margin: 10px 0;
+  padding: 0; }
+#add-news h2, #edit-news h2, #news-list h2 {
+  font-size: 1.5em !important; }
+#add-news .btn-ye, #edit-news .btn-ye, #news-list .btn-ye {
+  background-color: #f0be1c; }
+#add-news .btn-le, #edit-news .btn-le, #news-list .btn-le {
+  cursor: pointer;
+  margin: 10px 5px 10px 0;
+  float: left !important; }
+#add-news .btn-add, #edit-news .btn-add, #news-list .btn-add {
+  float: left !important;
+  margin: 5px 0;
+  font-size: 0.9em;
+  padding: 5px 10px; }
+#add-news .form-inline, #edit-news .form-inline, #news-list .form-inline {
+  justify-content: flex-end; }
+#add-news .judul, #edit-news .judul, #news-list .judul {
+  width: 40%; }
+#add-news table span, #edit-news table span, #news-list table span {
+  color: #95a5a6;
+  font-style: italic; }
+
+.mg-0 {
+  margin: 0 !important; }
+
+.mg-t-0 {
+  margin-top: 0 !important; }
+
+.mg-b-0 {
+  margin-bottom: 0 !important; }
+
+.mg-r-0 {
+  margin-right: 0 !important; }
+
+.mg-l-0 {
+  margin-left: 0 !important; }
+
 html, body {
   font-family: 'Fira-Regular',sans-serif; }
 

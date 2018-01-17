@@ -1,0 +1,106 @@
+#member-page {
+  .border {
+    border: none!important;
+    border-bottom: 1px solid $light-gray!important;
+  }
+  .member-sq {
+    border: 1px solid $light-gray;
+    border-radius: 5px;
+
+    .photo {
+      border-radius: 50%;
+      width: 100%;
+      margin: 15px 0;
+    }
+    p {
+      text-align: center;
+      margin: 0;
+      span {
+        font-weight: bold;
+      }
+    }
+    .status {
+      color: $yellow;
+    }
+    .mg-bt-15 {
+      margin-bottom: 15px!important;
+    }
+    .no-border {
+      border: none!important;
+    }
+
+    .new-memb {
+      text-align: center;
+      font-size: 2em;
+      color: $white;
+    }
+  }
+  .btn-circle {
+    border: none;
+    margin-top: 50px;
+    border-radius: 100%!important;
+    width: 70px;
+    height: 70px;
+    background-color: $yellow;
+    &:hover {
+      background-color: $light-yellow;
+    }
+  }
+
+}
+
+.mg-t-0 {
+  margin-top: 0;
+}
+
+#add-news, #edit-news, #news-list {
+  .title-event-db {
+    text-align: left;
+    margin: 10px 0;
+    padding: 0;
+  }
+  h2 {
+    font-size: 1.5em!important;
+  }
+  .btn-ye {
+    background-color: $yellow;
+  }
+  .btn-le {
+    cursor: pointer;
+    margin: 10px 5px 10px 0;
+    float: left!important;
+  }
+  .btn-add {
+    float: left!important;
+    margin: 5px 0;
+    font-size: 0.9em;
+    padding: 5px 10px;
+  }
+  .form-inline {
+    justify-content: flex-end;
+  }
+  .judul {
+    width: 40%;
+  }
+  table {
+    span {
+      color: $gray;
+      font-style: italic;
+    }
+  }
+}
+.mg-0 {
+  margin: 0!important;
+}
+.mg-t-0 {
+  margin-top: 0!important;
+}
+.mg-b-0 {
+  margin-bottom: 0!important;
+}
+.mg-r-0 {
+  margin-right: 0!important;
+}
+.mg-l-0 {
+  margin-left: 0!important;
+}

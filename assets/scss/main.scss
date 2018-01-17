@@ -9,6 +9,7 @@
 
 // ---------------------- color pallete
  $black : #000;
+ $dark-gray : #36373B;
  $blue :  #304179;
  $flat-black : #222222;
  $gray : #95a5a6;
@@ -28,6 +29,7 @@
 @import 'base/_font';
 @import 'base/_reset';
 @import 'layout/_layout';    // base layout
+@import 'layout/_member';    // base layout
 @import 'theme/_theme';      // base theme
 @import 'theme/_button';
 @import 'layout/_responsive-layout';
