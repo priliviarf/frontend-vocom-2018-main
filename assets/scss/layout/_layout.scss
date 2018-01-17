@@ -345,7 +345,7 @@ footer {
 // --------- REGISTER Page
 
 #register {
-  background-color: $blue;
+  background-color: $somewhat-blue;
   padding: 30px;
   color: $blue!important;
       .regist-content {
@@ -353,6 +353,7 @@ footer {
         font-family: 'Montserrat';
         background-color: $white;
         color: $blue;
+				margin-top: 48px;
         padding: 10px 0;
         width: 70%;
         border-radius: 20px;
@@ -383,6 +384,9 @@ footer {
             padding: 10px 25px!important;
           }
           .tab-content {
+						.little-small {
+							font-size: 0.95em;
+						}
             margin-top: 10px;
             input {
               margin: 0;
@@ -460,7 +464,7 @@ footer {
     position: fixed;
     right: 0;
     width: 30%;
-    top: 0;
+    top: 48px;
     min-height: 100%;
     padding: 25px 0;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
@@ -470,16 +474,22 @@ footer {
       margin: 0 auto;
       display: block;
     }
+    #desc-madc .desc-logo {
+      width: 40%;
+      margin: 0 auto;
+      display: block;
+    }
+
     p {
       font-family: 'Montserrat';
       line-height: 1.5em;
       direction: rtl;
-      padding: 50px 25px 50px 50px;
+      padding: 25px 25px 25px 50px;
     }
     span {
       font-weight: bold;
       font-size: 2em;
-      line-height: 1.2em;
+      line-height: 1.1em;
       text-align: right!important;
     }
   }
@@ -765,3 +775,109 @@ div h2.title-db{
     margin-right: 30px;
 }
 /*End of dashboard*/
+#member-page {
+  .border {
+    border: none!important;
+    border-bottom: 1px solid $light-gray!important;
+  }
+  .member-sq {
+    border: 1px solid $light-gray;
+    border-radius: 5px;
+
+    .photo {
+      border-radius: 50%;
+      width: 100%;
+      margin: 15px 0;
+    }
+    p {
+      text-align: center;
+      margin: 0;
+      span {
+        font-weight: bold;
+      }
+    }
+    .status {
+      color: $yellow;
+    }
+    .mg-bt-15 {
+      margin-bottom: 15px!important;
+    }
+    .no-border {
+      border: none!important;
+    }
+
+    .new-memb {
+      text-align: center;
+      font-size: 2em;
+      color: $white;
+    }
+  }
+  .btn-circle {
+    border: none;
+    margin-top: 50px;
+    border-radius: 100%!important;
+    width: 70px;
+    height: 70px;
+    background-color: $yellow;
+    &:hover {
+      background-color: $light-yellow;
+    }
+  }
+
+}
+
+.mg-t-0 {
+  margin-top: 0;
+}
+
+#add-news, #edit-news, #news-list {
+  .title-event-db {
+    text-align: left;
+    margin: 10px 0;
+    padding: 0;
+  }
+  h2 {
+    font-size: 1.5em!important;
+  }
+  .btn-ye {
+    background-color: $yellow;
+  }
+  .btn-le {
+    cursor: pointer;
+    margin: 10px 5px 10px 0;
+    float: left!important;
+  }
+  .btn-add {
+    float: left!important;
+    margin: 5px 0;
+    font-size: 0.9em;
+    padding: 5px 10px;
+  }
+  .form-inline {
+    justify-content: flex-end;
+  }
+  .judul {
+    width: 40%;
+  }
+  table {
+    span {
+      color: $gray;
+      font-style: italic;
+    }
+  }
+}
+.mg-0 {
+  margin: 0!important;
+}
+.mg-t-0 {
+  margin-top: 0!important;
+}
+.mg-b-0 {
+  margin-bottom: 0!important;
+}
+.mg-r-0 {
+  margin-right: 0!important;
+}
+.mg-l-0 {
+  margin-left: 0!important;
+}
