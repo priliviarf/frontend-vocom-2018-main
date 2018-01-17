@@ -1,7 +1,6 @@
 .btn {
   @include radius(0);
   @include transition(0.3);
-  border: none;
   padding: .5rem 1.4rem;
 }
 .btn-blue {

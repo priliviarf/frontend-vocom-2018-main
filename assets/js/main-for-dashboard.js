@@ -7,6 +7,5 @@ $(document).ready(function(){
 		//  cursorborder:"1px solid transparent",
 		//  cursorborderradius:"0px"
 	 // });
-   // lightcase
-	 $('a[data-rel^=lightcase]').lightcase();
+
  });

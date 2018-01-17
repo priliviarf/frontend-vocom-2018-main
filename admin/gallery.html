@@ -8,7 +8,7 @@
   <meta name="author" content="Vocomfest Technical Support Team">
   <meta name="robots" content="index,follow">
 
-  <title>Admin Dashboard | Gallery</title>
+  <title>Admin Dashboard</title>
 
   <link rel="shortcut icon" type="x-icon" href="../assets/img/icon.png">
 
@@ -16,14 +16,14 @@
   <link rel="stylesheet" type="text/css" href="../assets/vendor/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/normalize.css">
   <link rel="stylesheet" type="text/css" href="../assets/vendor/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="../assets/vendor/lightcase/lightcase.css">
+  <link rel="stylesheet" type="text/css" href="../assets/vendor/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="../assets/vendor/slick/slick-theme.css">
+   <link rel="stylesheet" type="text/css" href="../assets/vendor/lightcase/lightcase.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/vocom-main-style.css">
 
 </head>
 <body>
 
-  <!-- modal -->
-  <div class="modal fade" id="delete-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 <div id="dashboard">
   <!-- Modal -->
   <div class="modal fade" id="upload-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -31,7 +31,6 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLongTitle">Upload Image</h5>
-          <h5 class="modal-title" id="exampleModalLongTitle">Hapus Data</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -47,16 +46,8 @@
               <input type="file" class="form-control-file" id="">
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
-            <p>Anda yakin ingin <strong>menghapus</strong> data?</p>
-            <button type="button" class="btn btn-danger" name="button"> <i class="fa fa-check"></i> Ya</button>
-            <button type="button" class="btn btn-secondary" name="button" data-dismiss="modal"> <i class="fa fa-times"></i> Batal</button>
           </form>
         </div>
-      </div>
-    </div>
-  </div>
-  <!-- /modal -->
-
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
@@ -105,6 +96,12 @@
           </li>
           <li>
             <a href="#" class="col-sm-12">
+              <i class="fa fa-microphone"></i>
+              <span>Event</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="col-sm-12">
               <i class="fa fa-hourglass-half"></i>
               <span>News</span>
             </a>
@@ -114,15 +111,15 @@
               <i class="fa fa-camera"></i>
               <span>Gallery</span>
             </a>
-          </li>
+          </li>          
           <li>
-            <a href="./payment.html" class="col-sm-12">
+            <a href="#" class="col-sm-12">
               <i class="fa fa-credit-card-alt"></i>
               <span>Payment</span>
             </a>
           </li>
           <li>
-            <a href="./upload.html" class="col-sm-12">
+            <a href="#" class="col-sm-12">
               <i class="fa fa-upload"></i>
               <span>Upload</span>
             </a>
@@ -133,14 +130,14 @@
 
       <!--mulai content section-->
       <div class="col-lg-10 col-md-9 col-sm-12 box-db">
-        <div class="container-fluid px-3">
-        <!--Gallery Content-->
+        <div class="container-fluid px-3">   
+        <!--Gallery Content-->    
           <div class="div-content-db">           
             <button type="button" class="btn btn-admin-gl mg-b-15" data-toggle="modal" data-target="#upload-modal"><i class="fa fa-upload mg-r-10"></i>Upload Image</button>
             <br>
 
           <form method="" action="">
-            <p class="mg-bt-10 stat-gallery small"> All (0) | <a href="">Published</a> (1) | <a href="">Unpublish</a> (3)</p>
+            <p class="mg-bt-10 stat-gallery"> All (0) | <a href="">Published</a> (1) | <a href="">Unpublish</a> (3)</p>
             <!-- GALLERY LIST -->
             <div class="panel panel-default">
                 <div class="panel-heading">
@@ -149,8 +146,8 @@
                 <div class="panel-body">
                   <div class="table-responsive">
                     <div class="row nomag">
-                      <div class="col-md-8 small">
-                        Selected (0) | <a href="" data-toggle="modal" data-target="#delete"><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-trash-o" data-original-title="Delete"></i><span> Delete Selected</span></a> | <a href=""><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-globe" data-original-title="Publish"></i> Publish Selected</a> | <a href=""><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-minus-circle" data-original-title="Unpublish"></i> Unpublish Selected</a>
+                      <div class="col-md-8">
+                        Selected (0) | <a href="" data-toggle="modal" data-target="#delete"><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-trash-o" data-original-title="Delete"></i><span>Delete Selected</span></a> | <a href=""><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-globe" data-original-title="Publish"></i> Publish Selected</a> | <a href=""><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-minus-circle" data-original-title="Unpublish"></i> Unpublish Selected</a>
                       </div>
                       <div class="col-md-4 nopad text-right">
                         <label>
@@ -178,13 +175,13 @@
                               <input name="" value="1" type="checkbox">
                             </label>
                             <span class="float-right">
-                              <a href=""><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-minus-circle" data-original-title="Unpublish"></i></a>
-                              <a href="" data-toggle="modal" data-target="#delete-modal"><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-trash-o" data-original-title="Delete"></i></a>
-                              <a href="" data-toggle="modal" data-target="#detailImage"><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-search-plus" data-original-title="Detail"></i></a>
+                              <a href=""><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-minus-circle" data-original-title="Unpublish"></i></a> 
+                              <a href="" data-toggle="modal" data-target="#delete"><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-trash-o" data-original-title="Delete"></i></a> 
+                              <a href="" data-toggle="modal" data-target="#detailImage"><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-search-plus" data-original-title="Detail"></i></a> 
                             </span>
                           </div>
                           <span></span>
-                        </div>
+                        </div>  
                       </section>
                       <!--/section-->
 
@@ -202,13 +199,13 @@
                               <input name="" value="1" type="checkbox">
                             </label>
                             <span class="float-right">
-                              <a href=""><i class="fa fa-minus-circle"></i></a>
-                              <a href="" data-toggle="modal" data-target="#delete-modal"><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-trash-o" data-original-title="Delete"></i></a>
-                              <a href=""><i class="fa fa-search-plus"></i></a>
+                              <a href=""><i class="fa fa-minus-circle"></i></a> 
+                              <a href=""><i class="fa fa-trash-o"></i></a> 
+                              <a href=""><i class="fa fa-search-plus"></i></a> 
                             </span>
                           </div>
                           <span></span>
-                        </div>
+                        </div>  
                       </section>
                       <!--/section-->
 
@@ -225,13 +222,13 @@
                               <input name="" value="1" type="checkbox">
                             </label>
                             <span class="float-right">
-                              <a href=""><i class="fa fa-minus-circle"></i></a>
-                              <a href="" data-toggle="modal" data-target="#delete-modal"><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-trash-o" data-original-title="Delete"></i></a>
-                              <a href=""><i class="fa fa-search-plus"></i></a>
+                              <a href=""><i class="fa fa-minus-circle"></i></a> 
+                              <a href=""><i class="fa fa-trash-o"></i></a> 
+                              <a href=""><i class="fa fa-search-plus"></i></a> 
                             </span>
                           </div>
                           <span></span>
-                        </div>
+                        </div>  
                       </section>
                       <!--/section-->
 
@@ -248,13 +245,13 @@
                               <input name="" value="1" type="checkbox">
                             </label>
                             <span class="float-right">
-                              <a href=""><i class="fa fa-minus-circle"></i></a>
-                              <a href="" data-toggle="modal" data-target="#delete-modal"><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-trash-o" data-original-title="Delete"></i></a>
-                              <a href=""><i class="fa fa-search-plus"></i></a>
+                              <a href=""><i class="fa fa-minus-circle"></i></a> 
+                              <a href=""><i class="fa fa-trash-o"></i></a> 
+                              <a href=""><i class="fa fa-search-plus"></i></a> 
                             </span>
                           </div>
                           <span></span>
-                        </div>
+                        </div>  
                       </section>
                       <!--/section-->
 
@@ -271,13 +268,13 @@
                               <input name="" value="1" type="checkbox">
                             </label>
                             <span class="float-right">
-                              <a href=""><i class="fa fa-minus-circle"></i></a>
-                              <a href="" data-toggle="modal" data-target="#delete-modal"><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-trash-o" data-original-title="Delete"></i></a>
-                              <a href=""><i class="fa fa-search-plus"></i></a>
+                              <a href=""><i class="fa fa-minus-circle"></i></a> 
+                              <a href=""><i class="fa fa-trash-o"></i></a> 
+                              <a href=""><i class="fa fa-search-plus"></i></a> 
                             </span>
                           </div>
                           <span></span>
-                        </div>
+                        </div>  
                       </section>
                       <!--/section-->
 
@@ -294,13 +291,13 @@
                               <input name="" value="1" type="checkbox">
                             </label>
                             <span class="float-right">
-                              <a href=""><i class="fa fa-minus-circle"></i></a>
-                              <a href="" data-toggle="modal" data-target="#delete-modal"><i data-toggle="tooltip" data-placement="top" title="" class="fa fa-trash-o" data-original-title="Delete"></i></a>
-                              <a href=""><i class="fa fa-search-plus"></i></a>
+                              <a href=""><i class="fa fa-minus-circle"></i></a> 
+                              <a href=""><i class="fa fa-trash-o"></i></a> 
+                              <a href=""><i class="fa fa-search-plus"></i></a> 
                             </span>
                           </div>
                           <span></span>
-                        </div>
+                        </div>  
                       </section>
                       <!--/section-->
 
@@ -338,11 +335,12 @@
     </div>
   </div>
 </div>
-<script type="text/javascript" src="../assets/js/jquery.min.js"></script>
-<script type="text/javascript" src="../assets/js/popper.js"></script>
-<script type="text/javascript" src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
-<script type="text/javascript" src="../assets/vendor/lightcase/lightcase.js"></script>
-<script type="text/javascript" src="../assets/js/main-for-dashboard.js"></script>
-</script>
+ <!-- JAVASCRIPT HERE  -->
+  <script type="text/javascript" src="../assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="../assets/js/popper.js"></script>
+  <script type="text/javascript" src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../assets/vendor/slick/slick.min.js"></script>
+  <script type="text/javascript" src="../assets/vendor/lightcase/lightcase.js"></script>
+  <script type="text/javascript" src="../assets/js/main.js"></script>
 </body>
 </html>
