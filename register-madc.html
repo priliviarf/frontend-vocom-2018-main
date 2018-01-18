@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Vocational Computer Festival (Vocomfest) adalah lomba tahunan yang diselenggarakan oleh HIMAKOMSI UGM yang terdiri dari lomba web design untuk SLTA, lomba mobile apps development serta ICPC untuk mahasiswa, dan ditutup dengan sebuah seminar nasional.">
+	<meta name="keywords" content="vocomfest, ugm, himakomsi, computer, festival, lomba">
+	<meta name="author" content="Vocomfest Technical Support Team">
+	<meta name="robots" content="index,follow">
+
+  <title>Vocomfest - Register Page</title>
+
+  <link rel="shortcut icon" type="x-icon" href="./assets/img/icon.png">
+
+  <!-- CSS HERE -->
+  <link rel="stylesheet" type="text/css" href="./assets/vendor/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="./assets/vendor/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/vendor/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="./assets/vendor/slick/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="./assets/vendor/lightcase/lightcase.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/vocom-main-style.css">
+
+</head>
+<body id="register">
+  <div class="modal fade" id="alert-gagal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-body">
+          <div class="alert alert-danger" role="alert">
+            <strong>Oops!</strong> Data yang dimasukkan Belum Lengkap.
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="alert-sukses" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-body">
+          <div class="alert alert-success" role="alert">
+            <strong>Selamat!</strong> Registrasi berhasil! harap cek email untuk verifikasi.
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <nav id="reg-navbar" class="navbar fixed-top navbar-expand-lg px-4 navbar-dark navbar-scroll">
+    <a class="navbar-brand" href="./index.html">
+      <img src="./assets/img/icon.png" alt="">
+      <span>Vocomfest</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="navbar-nav small mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html#hero-section">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html#events">Event</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html#timeline">Timeline</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html#news">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html#gallery">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html#contact">Contact</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Register</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./login.html">Login</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+	<section class="regist-content">
+  		<img id="vocom-logo-color" src="./assets/img/logo.png" alt="">
+  		<p class="title">Register To Vocomfest</p>
+      <div class="container mg-pd-0">
+      <div class="form-regist">
+        <ul class="nav nav-pills mg-t-10">
+          <li class="active">
+            <a href="#">
+            <i class="fa fa-laptop fa-2x"></i> <br>
+            <span>MADC</span>
+          </a></li>
+          <li><a href="./register-wdc.html">
+            <i class="fa fa-mobile fa-2x"></i> <br>
+            <span>WDC</span>
+          </a></li>
+          <li><a href="./register-semnas.html">
+            <i class="fa fa-microphone fa-2x"></i> <br>
+            <span>SEMNAS</span>
+          </a></li>
+        </ul>
+        <div class="tab-content">
+          <!-- MADC FORM -->
+          <div id="madc-form" class="tab-pane fade in active show">
+            <div class="row mg-0">
+              <div class="col-md-6 col-12 mg-b-15">
+                <div class="row">
+                  <div class="col-md-5">
+                    Team Name*
+                  </div>
+                  <div class="col-md-7">
+                    : <input type="text" placeholder="Team Name" name="" required>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-12 mg-b-15">
+                <div class="row">
+                  <div class="col-md-5">
+                    Leader email*
+                  </div>
+                  <div class="col-md-7">
+                    : <input type="text" placeholder="Email" name="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 col-12 mg-b-15">
+                <div class="row">
+                  <div class="col-md-5">
+                    Password*
+                  </div>
+                  <div class="col-md-7">
+                    : <input type="password" placeholder="Password" name="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-12 mg-b-15">
+                <div class="row">
+                  <div class="col-md-5 little-small">
+                    Confirm Password*
+                  </div>
+                  <div class="col-md-7">
+                    : <input type="password" placeholder="Confirm Password" name="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 col-12 mg-b-15">
+                <div class="row">
+                  <div class="col-md-5">
+                    Instance Name*
+                  </div>
+                  <div class="col-md-7">
+                    : <input type="text" placeholder="Instance Name" name="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-12 mg-b-15">
+                <div class="row">
+                  <div class="col-md-5">
+                    Instance Address*
+                  </div>
+                  <div class="col-md-7">
+                    : <input type="text" placeholder="Instance Address" name="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 col-12 mg-b-15">
+                <div class="row">
+                  <div class="col-md-5">
+                    Leader Name*
+                  </div>
+                  <div class="col-md-7">
+                    : <input type="text" placeholder="Leader Name" name="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-12 mg-b-15">
+                <div class="row">
+                  <div class="col-md-5">
+                    Phone Number*
+                  </div>
+                  <div class="col-md-7 phone-num">
+                    : +62 <input type="number" placeholder="Phone Number" name="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-12 mg-b-15">
+                <div class="row">
+                  <span class="mg-b-15">Team Member #1</span>
+                </div>
+                <div class="row ">
+                  <div class="col-md-5 mg-b-15">
+                    Member Name*
+                  </div>
+                  <div class="col-md-7 mg-b-15">
+                    : <input type="text" placeholder="Member Name" name="">
+                  </div>
+                </div>
+                <div class="row ">
+                  <div class="col-md-5 mg-b-15">
+                    Member Email*
+                    </div>
+                  <div class="col-md-7 mg-b-15">
+                    : <input type="text" placeholder="Member Email" name="">
+                  </div>
+                </div>
+                <div class="row ">
+                  <div class="col-md-5">
+                    Phone Number*
+                    </div>
+                  <div class="col-md-7 phone-num">
+                    : +62 <input type="number" placeholder="Phone Number" name="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-12 mg-b-15">
+                <div class="row">
+                  <span class="mg-b-15">Team Member #2</span>
+                </div>
+                <div class="row ">
+                  <div class="col-md-5 mg-b-15">
+                    Member Name
+                  </div>
+                  <div class="col-md-7 mg-b-15">
+                    : <input type="text" placeholder="Member Name" name="">
+                  </div>
+                </div>
+                <div class="row ">
+                  <div class="col-md-5 mg-b-15">
+                    Member Email
+                    </div>
+                  <div class="col-md-7 mg-b-15">
+                    : <input type="text" placeholder="Member Email" name="">
+                  </div>
+                </div>
+                <div class="row ">
+                  <div class="col-md-5">
+                    Phone Number
+                    </div>
+                  <div class="col-md-7 phone-num">
+                    : +62 <input type="number" placeholder="Phone Number" name="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row" >
+              <div class="col-md-6 col-12 mg-b-15">
+                <div class="row">
+                  <span class="mg-b-15">Team Member #3</span>
+                </div>
+                <div class="row ">
+                  <div class="col-md-5 mg-b-15">
+                    Member Name
+                  </div>
+                  <div class="col-md-7 mg-b-15">
+                    : <input type="text" placeholder="Member Name" name="">
+                  </div>
+                </div>
+                <div class="row ">
+                  <div class="col-md-5 mg-b-15">
+                    Member Email
+                    </div>
+                  <div class="col-md-7 mg-b-15">
+                    : <input type="text" placeholder="Member Email" name="">
+                  </div>
+                </div>
+                <div class="row ">
+                  <div class="col-md-5">
+                    Phone Number
+                    </div>
+                  <div class="col-md-7 phone-num">
+                    : +62 <input type="number" placeholder="Phone Number" name="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-md-3 mg-bt-10">
+                <input class="regist-btn mg-bt-15" data-toggle="modal" data-target="#alert" type="submit" value="REGISTER" name="">
+              </div>
+            </div>
+            <p class="log-here">
+              Already have an account? <span><a href="#">Login here</a></span>.
+            </p>
+          </div>
+
+          <!-- END OF MADC FORM -->
+
+      </div>
+    </div>
+  </section>
+  <section class="desc-form">
+    <div id="desc-madc" style="display:block;">
+      <img class="desc-logo" src="./assets/img/madc.png" alt="">
+      <p>
+        <span>MOBILE APPS DEVELOPMENT CONTEST</span><br><br>
+          Mobile Apps Development Competition merupakan kompetisi
+          berbasis platform android untuk mahasiswa seluruh Indonesia.
+          Melalui kompetisi ini, diharapkan dapat memberikan kontribusi
+          dalam mencetak generasi baru pengembangan aplikasi.
+      </p>
+    </div>
+
+  </section>
+
+
+  <script type="text/javascript" src="./assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="./assets/js/popper.js"></script>
+  <script type="text/javascript" src="./assets/vendor/bootstrap/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./assets/vendor/slick/slick.min.js"></script>
+  <script type="text/javascript" src="./assets/vendor/lightcase/lightcase.js"></script>
+  <script type="text/javascript" src="./assets/vendor/nicescroll/jquery.nicescroll.min.js"></script>
+  <script type="text/javascript" src="./assets/js/main.js"></script>
+
+</body>
+</html>

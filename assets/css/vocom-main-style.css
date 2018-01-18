@@ -753,6 +753,7 @@ footer {
     font-family: 'Montserrat';
     background-color: #fff;
     color: #304179;
+    margin-top: 48px;
     padding: 10px 0;
     width: 70%;
     border-radius: 20px; }
@@ -778,6 +779,8 @@ footer {
         padding: 10px 25px !important; }
       #register .regist-content .container .form-regist .tab-content {
         margin-top: 10px; }
+        #register .regist-content .container .form-regist .tab-content .little-small {
+          font-size: 0.95em; }
         #register .regist-content .container .form-regist .tab-content input {
           margin: 0;
           padding: 0 5px;
@@ -834,7 +837,7 @@ footer {
     position: fixed;
     right: 0;
     width: 30%;
-    top: 0;
+    top: 48px;
     min-height: 100%;
     padding: 25px 0;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
@@ -843,15 +846,19 @@ footer {
       width: 50%;
       margin: 0 auto;
       display: block; }
+    #register .desc-form #desc-madc .desc-logo {
+      width: 40%;
+      margin: 0 auto;
+      display: block; }
     #register .desc-form p {
       font-family: 'Montserrat';
       line-height: 1.5em;
       direction: rtl;
-      padding: 50px 25px 50px 50px; }
+      padding: 25px 25px 25px 50px; }
     #register .desc-form span {
       font-weight: bold;
       font-size: 2em;
-      line-height: 1.2em;
+      line-height: 1.1em;
       text-align: right !important; }
 
 /*-------Login page-------*/
@@ -1124,6 +1131,80 @@ div h2.title-db {
   margin-right: 30px; }
 
 /*End of dashboard*/
+#member-page .border {
+  border: none !important; }
+#member-page .member-sq {
+  border: 1px solid #d8dcdc; }
+  #member-page .member-sq .photo {
+    border-radius: 50%;
+    width: 100%;
+    margin: 15px 0; }
+  #member-page .member-sq p {
+    text-align: center;
+    margin: 0; }
+    #member-page .member-sq p span {
+      font-weight: bold; }
+  #member-page .member-sq .status {
+    color: #f0be1c; }
+  #member-page .member-sq .mg-bt-15 {
+    margin-bottom: 15px !important; }
+  #member-page .member-sq .no-border {
+    border: none !important; }
+  #member-page .member-sq .new-memb {
+    text-align: center;
+    font-size: 2em;
+    color: #fff; }
+#member-page .btn-circle {
+  border: none;
+  margin-top: 50px;
+  border-radius: 100% !important;
+  width: 70px;
+  height: 70px;
+  background-color: #f0be1c; }
+  #member-page .btn-circle:hover {
+    background-color: #f3cb5a; }
+
+.mg-t-0 {
+  margin-top: 0; }
+
+#add-news .title-event-db, #edit-news .title-event-db, #news-list .title-event-db {
+  text-align: left;
+  margin: 10px 0;
+  padding: 0; }
+#add-news h2, #edit-news h2, #news-list h2 {
+  font-size: 1.5em !important; }
+#add-news .btn-ye, #edit-news .btn-ye, #news-list .btn-ye {
+  background-color: #f0be1c; }
+#add-news .btn-le, #edit-news .btn-le, #news-list .btn-le {
+  cursor: pointer;
+  margin: 10px 5px 10px 0;
+  float: left !important; }
+#add-news .btn-add, #edit-news .btn-add, #news-list .btn-add {
+  float: left !important;
+  margin: 5px 0; }
+#add-news .form-inline, #edit-news .form-inline, #news-list .form-inline {
+  justify-content: flex-end; }
+#add-news .judul, #edit-news .judul, #news-list .judul {
+  width: 40%; }
+#add-news table span, #edit-news table span, #news-list table span {
+  color: #95a5a6;
+  font-style: italic; }
+
+.mg-0 {
+  margin: 0 !important; }
+
+.mg-t-0 {
+  margin-top: 0 !important; }
+
+.mg-b-0 {
+  margin-bottom: 0 !important; }
+
+.mg-r-0 {
+  margin-right: 0 !important; }
+
+.mg-l-0 {
+  margin-left: 0 !important; }
+
 /*Detail Event*/
 .event-top {
   background-color: #304179; }
